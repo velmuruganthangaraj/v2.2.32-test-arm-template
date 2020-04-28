@@ -1,0 +1,758 @@
+#Software: reportserverweb 
+#Date: 2020-04-28 12:51:20,123 
+#Fields: date thread namespace methodname message 
+2020-04-28 12:51:20,164 [16] Created config.xml with connection properties
+2020-04-28 12:51:33,093 [25] Initiated get tenant config
+2020-04-28 12:51:33,094 [25] Initiate set tenant config
+2020-04-28 12:51:33,097 [25] Initiated set tenant config
+2020-04-28 12:51:33,345 [25] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:51:33,345 [25] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:51:33,449 [25] Initiated get tenant config
+2020-04-28 12:51:33,449 [25] Initiate set tenant config
+2020-04-28 12:51:33,449 [25] Initiated set tenant config
+2020-04-28 12:51:33,456 [25] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:51:33,456 [25] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:51:33,459 [25] Initiated get tenant config
+2020-04-28 12:51:33,459 [25] Initiate set tenant config
+2020-04-28 12:51:33,459 [25] Initiated set tenant config
+2020-04-28 12:51:33,464 [25] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:51:33,465 [25] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:51:33,465 [25] SystemSettings is null
+2020-04-28 12:51:33,465 [25] OnActionExecuting
+2020-04-28 12:53:15,711 [6] Initiated get tenant config
+2020-04-28 12:53:15,711 [6] Initiate set tenant config
+2020-04-28 12:53:15,711 [6] Initiated set tenant config
+2020-04-28 12:53:15,787 [6] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:15,787 [6] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:15,813 [6] Initiated get tenant config
+2020-04-28 12:53:15,813 [6] Initiate set tenant config
+2020-04-28 12:53:15,813 [6] Initiated set tenant config
+2020-04-28 12:53:15,820 [6] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:15,820 [6] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:15,821 [6] Initiated get tenant config
+2020-04-28 12:53:15,821 [6] Initiate set tenant config
+2020-04-28 12:53:15,821 [6] Initiated set tenant config
+2020-04-28 12:53:15,825 [6] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:15,826 [6] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:15,826 [6] Initiated get tenant config
+2020-04-28 12:53:15,826 [6] Initiate set tenant config
+2020-04-28 12:53:15,826 [6] Initiated set tenant config
+2020-04-28 12:53:15,831 [6] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:15,831 [6] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:15,831 [6] SystemSettings is null
+2020-04-28 12:53:15,831 [6] OnActionExecuting
+2020-04-28 12:53:15,831 [6] Initiated get tenant config
+2020-04-28 12:53:15,831 [6] Initiate set tenant config
+2020-04-28 12:53:15,831 [6] Initiated set tenant config
+2020-04-28 12:53:15,836 [6] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:15,837 [6] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:18,257 [12] Initiated get tenant config
+2020-04-28 12:53:18,257 [12] Initiate set tenant config
+2020-04-28 12:53:18,257 [12] Initiated set tenant config
+2020-04-28 12:53:18,308 [12] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:18,308 [12] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:18,897 [6] Initiated get tenant config
+2020-04-28 12:53:18,897 [6] Initiate set tenant config
+2020-04-28 12:53:18,897 [6] Initiated set tenant config
+2020-04-28 12:53:18,924 [6] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:18,924 [6] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:19,028 [30] Initiated get tenant config
+2020-04-28 12:53:19,029 [30] Initiate set tenant config
+2020-04-28 12:53:19,029 [30] Initiated set tenant config
+2020-04-28 12:53:19,035 [30] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:19,035 [30] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:19,150 [26] Initiated get tenant config
+2020-04-28 12:53:19,150 [26] Initiate set tenant config
+2020-04-28 12:53:19,150 [26] Initiated set tenant config
+2020-04-28 12:53:19,154 [26] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:19,154 [26] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:19,179 [36] Initiated get tenant config
+2020-04-28 12:53:19,179 [36] Initiate set tenant config
+2020-04-28 12:53:19,180 [36] Initiated set tenant config
+2020-04-28 12:53:19,188 [36] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:19,188 [36] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:21,184 [26] Initiated get tenant config
+2020-04-28 12:53:21,184 [26] Initiate set tenant config
+2020-04-28 12:53:21,184 [26] Initiated set tenant config
+2020-04-28 12:53:21,188 [26] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:21,188 [26] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:21,237 [26] Initiated get tenant config
+2020-04-28 12:53:21,237 [26] Initiate set tenant config
+2020-04-28 12:53:21,237 [26] Initiated set tenant config
+2020-04-28 12:53:21,242 [26] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:21,242 [26] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:21,242 [26] Initiated get tenant config
+2020-04-28 12:53:21,242 [26] Initiate set tenant config
+2020-04-28 12:53:21,242 [26] Initiated set tenant config
+2020-04-28 12:53:21,246 [26] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:21,247 [26] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:21,247 [26] SystemSettings is null
+2020-04-28 12:53:21,247 [26] OnActionExecuting
+2020-04-28 12:53:21,247 [26] Initiated get tenant config
+2020-04-28 12:53:21,247 [26] Initiate set tenant config
+2020-04-28 12:53:21,247 [26] Initiated set tenant config
+2020-04-28 12:53:21,252 [26] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:53:21,252 [26] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 12:53:21,513 [26] Generating database
+2020-04-28 12:53:21,532 [26] Testing database existance of SQL server
+2020-04-28 12:53:21,539 [26] Creating database in SQL server.
+2020-04-28 12:53:22,253 [26] Is database created?True
+2020-04-28 12:53:22,271 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,291 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,299 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,302 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,306 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,309 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,433 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,437 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,440 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,449 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,451 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,454 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,456 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,458 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,461 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,465 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,587 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,598 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,616 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,760 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,767 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,771 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,773 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,776 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,778 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,780 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,784 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,786 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,788 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,790 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,887 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,890 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,892 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,921 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,924 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,927 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,933 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,939 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,957 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,962 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,972 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,977 [26] Creating database tables in SQL server.
+2020-04-28 12:53:22,983 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,245 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,400 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,424 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,428 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,432 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,513 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,518 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,520 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,523 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,526 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,528 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,536 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,550 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,552 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,560 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,565 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,689 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,691 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,694 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,712 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,713 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,714 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,715 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,716 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,717 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,718 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,719 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,742 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,744 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,745 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,747 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,748 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,751 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,752 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,753 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,754 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,756 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,757 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,759 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,856 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,857 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,858 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,859 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,860 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,861 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,863 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,864 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,865 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,866 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,867 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,869 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,871 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,872 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,874 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,876 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,877 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,880 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,884 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,886 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,887 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,889 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,890 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,891 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,892 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,893 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,894 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,895 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,896 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,898 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,898 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,899 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,900 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,901 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,902 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,902 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,903 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,990 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,993 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,995 [26] Creating database tables in SQL server.
+2020-04-28 12:53:23,999 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,000 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,002 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,003 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,004 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,007 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,009 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,009 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,011 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,014 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,016 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,089 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,099 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,101 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,101 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,101 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,102 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,105 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,106 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,107 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,109 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,131 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,132 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,133 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,134 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,135 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,136 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,137 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,139 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,140 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,143 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,146 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,148 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,150 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,151 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,151 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,152 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,153 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,154 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,154 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,155 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,156 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,157 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,158 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,158 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,159 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,160 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,161 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,162 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,163 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,164 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,165 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,166 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,167 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,169 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,170 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,171 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,172 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,175 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,176 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,178 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,182 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,183 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,184 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,185 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,186 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,189 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,190 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,193 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,194 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,196 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,200 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,204 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,205 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,208 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,209 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,210 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,211 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,215 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,217 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,218 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,219 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,223 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,226 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,228 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,231 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,232 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,233 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,237 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,238 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,240 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,242 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,247 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,249 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,250 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,253 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,256 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,257 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,259 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,261 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,262 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,267 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,268 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,269 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,270 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,272 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,273 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,274 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,275 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,276 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,277 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,278 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,282 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,284 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,288 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,289 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,290 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,291 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,292 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,293 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,294 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,295 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,298 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,299 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,300 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,301 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,303 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,306 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,307 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,308 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,379 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,381 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,382 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,383 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,384 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,385 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,386 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,387 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,387 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,388 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,389 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,390 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,430 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,432 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,433 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,434 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,435 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,437 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,438 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,439 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,441 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,442 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,444 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,448 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,451 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,453 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,454 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,456 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,457 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,458 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,459 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,460 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,461 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,463 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,465 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,466 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,467 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,468 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,469 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,470 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,470 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,472 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,472 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,474 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,475 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,476 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,477 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,478 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,483 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,484 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,564 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,565 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,567 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,592 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,593 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,594 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,595 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,596 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,598 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,598 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,599 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,600 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,601 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,602 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,602 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,603 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,604 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,605 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,606 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,606 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,607 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,608 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,609 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,609 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,610 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,611 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,612 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,613 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,614 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,615 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,616 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,617 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,619 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,620 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,621 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,622 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,623 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,624 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,624 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,625 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,626 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,627 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,628 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,628 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,630 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,631 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,632 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,633 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,634 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,634 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,635 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,636 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,637 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,638 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,638 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,639 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,640 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,641 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,641 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,642 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,643 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,644 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,644 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,646 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,648 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,648 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,649 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,650 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,651 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,652 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,653 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,653 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,654 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,655 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,656 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,657 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,659 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,660 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,660 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,661 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,663 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,663 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,665 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,666 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,667 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,667 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,668 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,669 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,670 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,671 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,672 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,673 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,685 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,687 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,689 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,692 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,696 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,710 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,714 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,716 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,718 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,720 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,722 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,726 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,729 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,732 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,735 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,737 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,740 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,741 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,750 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,752 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,754 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,756 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,757 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,759 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,760 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,763 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,767 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,785 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,786 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,788 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,790 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,793 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,795 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,798 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,800 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,802 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,804 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,807 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,808 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,810 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,813 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,817 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,818 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,821 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,823 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,825 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,828 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,831 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,833 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,836 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,846 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,854 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,856 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,859 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,862 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,865 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,866 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,868 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,871 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,873 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,874 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,876 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,878 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,880 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,883 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,884 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,886 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,887 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,888 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,890 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,891 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,897 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,902 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,904 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,906 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,907 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,909 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,911 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,912 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,914 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,916 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,917 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,919 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,921 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,932 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,934 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,936 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,938 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,941 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,943 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,946 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,949 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,951 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,953 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,956 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,959 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,963 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,968 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,971 [26] Creating database tables in SQL server.
+2020-04-28 12:53:24,986 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,087 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,093 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,094 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,096 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,098 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,100 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,102 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,255 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,256 [26] Creating database tables in SQL server.
+2020-04-28 12:53:25,257 [26] Error in creating SQL database tables.
+2020-04-28 12:53:25,348 [26] Initializes system settings at first time
+2020-04-28 12:53:25,772 [26] Db service is not null
+2020-04-28 12:53:25,915 [26] Creating system admin
+2020-04-28 12:53:25,916 [26] Adding user in user table
+2020-04-28 12:53:26,608 [26] Adding user in user table successful
+2020-04-28 12:53:26,608 [26] Adding user in super admin group table
+2020-04-28 12:53:26,619 [26] Is user added in super admin?True
+2020-04-28 12:53:26,686 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,699 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,706 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,711 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,722 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,802 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,809 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,819 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,841 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,927 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,942 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,958 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,969 [26] Successfully adding permission to the group
+2020-04-28 12:53:26,977 [26] Successfully adding permission to the group
+2020-04-28 12:53:30,856 [36] Initiated get tenant config
+2020-04-28 12:53:30,856 [36] Initiate set tenant config
+2020-04-28 12:53:30,856 [36] Initiated set tenant config
+2020-04-28 12:53:30,899 [36] Db service is not null
+2020-04-28 12:53:30,902 [36] Session information has been successfully set to the tenant http://localhost:3030/reporting/site/site1
+2020-04-28 12:53:30,905 [36] Initiated get tenant config
+2020-04-28 12:53:30,929 [36] Initiated get tenant config
+2020-04-28 12:53:30,984 [36] Initiated get tenant config
+2020-04-28 12:53:31,016 [36] Initiated get tenant config
+2020-04-28 12:53:31,102 [36] Initiated get tenant config
+2020-04-28 12:53:31,103 [36] SystemSettings is not null
+2020-04-28 12:53:31,103 [36] OnActionExecuting
+2020-04-28 12:53:31,103 [36] Initiated get tenant config
+2020-04-28 12:53:31,120 [42] Initiated get tenant config
+2020-04-28 12:53:31,121 [42] Initiated get tenant config
+2020-04-28 12:53:31,124 [42] Initiated get tenant config
+2020-04-28 12:53:31,129 [42] Initiated get tenant config
+2020-04-28 12:53:31,133 [42] Initiated get tenant config
+2020-04-28 12:53:31,134 [42] Initiated get tenant config
+2020-04-28 12:53:31,726 [42] Initiated get tenant config
+2020-04-28 12:53:31,751 [42] Initiated get tenant config
+2020-04-28 12:53:31,751 [42] SystemSettings is not null
+2020-04-28 12:53:31,751 [42] OnActionExecuting
+2020-04-28 12:53:31,751 [42] Initiated get tenant config
+2020-04-28 12:53:31,832 [26] Initiated get tenant config
+2020-04-28 12:53:31,832 [26] Initiated get tenant config
+2020-04-28 12:53:31,835 [26] Initiated get tenant config
+2020-04-28 12:53:31,836 [26] Initiated get tenant config
+2020-04-28 12:53:31,838 [26] Initiated get tenant config
+2020-04-28 12:53:31,838 [26] Initiated get tenant config
+2020-04-28 12:53:31,841 [26] Initiated get tenant config
+2020-04-28 12:53:31,848 [26] Initiated get tenant config
+2020-04-28 12:53:31,848 [26] SystemSettings is not null
+2020-04-28 12:53:31,848 [26] OnActionExecuting
+2020-04-28 12:53:31,848 [26] Initiated get tenant config
+2020-04-28 12:53:36,137 [26] Initiated get tenant config
+2020-04-28 12:53:36,283 [26] Initiated get tenant config
+2020-04-28 12:53:51,996 [26] Initiated get tenant config
+2020-04-28 12:53:55,162 [26] Initiated get tenant config
+2020-04-28 12:53:57,009 [26] Initiated get tenant config
+2020-04-28 12:53:59,729 [26] Initiated get tenant config
+2020-04-28 12:54:04,573 [26] Initiated get tenant config
+2020-04-28 12:54:04,576 [26] Initiated get tenant config
+2020-04-28 12:54:04,583 [26] Initiated get tenant config
+2020-04-28 12:54:04,585 [26] Initiated get tenant config
+2020-04-28 12:54:04,595 [26] Initiated get tenant config
+2020-04-28 12:54:04,596 [26] Initiated get tenant config
+2020-04-28 12:54:04,597 [26] Initiated get tenant config
+2020-04-28 12:54:04,597 [26] Initiated get tenant config
+2020-04-28 12:54:04,598 [26] SystemSettings is not null
+2020-04-28 12:54:04,598 [26] OnActionExecuting
+2020-04-28 12:54:04,598 [26] Initiated get tenant config
+2020-04-28 12:54:04,724 [9] Initiated get tenant config
+2020-04-28 12:54:04,724 [9] Initiated get tenant config
+2020-04-28 12:54:04,725 [26] Initiated get tenant config
+2020-04-28 12:54:04,725 [26] Initiated get tenant config
+2020-04-28 12:54:04,777 [9] Initiated get tenant config
+2020-04-28 12:54:04,780 [9] Initiated get tenant config
+2020-04-28 12:54:04,786 [9] Initiated get tenant config
+2020-04-28 12:54:04,872 [26] Initiated get tenant config
+2020-04-28 12:54:04,872 [26] Initiated get tenant config
+2020-04-28 12:54:04,875 [26] Initiated get tenant config
+2020-04-28 12:54:04,879 [26] Getting unread notificaion count for user
+2020-04-28 12:54:04,881 [26] Getting unread notificaion count for user - status returned as True
+2020-04-28 12:58:19,442 [50] Initiated get tenant config
+2020-04-28 12:58:19,442 [50] Initiate set tenant config
+2020-04-28 12:58:19,442 [50] Initiated set tenant config
+2020-04-28 12:58:19,454 [50] Tenant configuration not found for the tenant - localhost
+2020-04-28 12:58:19,454 [50] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:03:19,440 [85] Initiated get tenant config
+2020-04-28 13:03:19,441 [85] Initiate set tenant config
+2020-04-28 13:03:19,441 [85] Initiated set tenant config
+2020-04-28 13:03:20,543 [85] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:03:20,543 [85] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:08:19,505 [103] Initiated get tenant config
+2020-04-28 13:08:19,505 [103] Initiate set tenant config
+2020-04-28 13:08:19,505 [103] Initiated set tenant config
+2020-04-28 13:08:19,521 [103] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:08:19,521 [103] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:13:19,440 [125] Initiated get tenant config
+2020-04-28 13:13:19,440 [125] Initiate set tenant config
+2020-04-28 13:13:19,440 [125] Initiated set tenant config
+2020-04-28 13:13:19,451 [125] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:13:19,451 [125] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:18:19,442 [156] Initiated get tenant config
+2020-04-28 13:18:19,443 [156] Initiate set tenant config
+2020-04-28 13:18:19,443 [156] Initiated set tenant config
+2020-04-28 13:18:20,229 [156] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:18:20,229 [156] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:23:19,441 [153] Initiated get tenant config
+2020-04-28 13:23:19,441 [153] Initiate set tenant config
+2020-04-28 13:23:19,441 [153] Initiated set tenant config
+2020-04-28 13:23:19,463 [153] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:23:19,463 [153] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:28:19,450 [154] Initiated get tenant config
+2020-04-28 13:28:19,450 [154] Initiate set tenant config
+2020-04-28 13:28:19,450 [154] Initiated set tenant config
+2020-04-28 13:28:21,166 [154] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:28:21,166 [154] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:33:19,445 [131] Initiated get tenant config
+2020-04-28 13:33:19,445 [131] Initiate set tenant config
+2020-04-28 13:33:19,445 [131] Initiated set tenant config
+2020-04-28 13:33:19,461 [131] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:33:19,462 [131] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:38:19,458 [110] Initiated get tenant config
+2020-04-28 13:38:19,458 [110] Initiate set tenant config
+2020-04-28 13:38:19,458 [110] Initiated set tenant config
+2020-04-28 13:38:20,356 [110] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:38:20,357 [110] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:43:19,450 [104] Initiated get tenant config
+2020-04-28 13:43:19,450 [104] Initiate set tenant config
+2020-04-28 13:43:19,450 [104] Initiated set tenant config
+2020-04-28 13:43:20,262 [104] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:43:20,262 [104] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:48:19,457 [84] Initiated get tenant config
+2020-04-28 13:48:19,457 [84] Initiate set tenant config
+2020-04-28 13:48:19,457 [84] Initiated set tenant config
+2020-04-28 13:48:20,461 [84] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:48:20,461 [84] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:53:19,462 [66] Initiated get tenant config
+2020-04-28 13:53:19,466 [66] Initiate set tenant config
+2020-04-28 13:53:19,466 [66] Initiated set tenant config
+2020-04-28 13:53:19,494 [66] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:53:19,494 [66] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 13:58:19,461 [56] Initiated get tenant config
+2020-04-28 13:58:19,461 [56] Initiate set tenant config
+2020-04-28 13:58:19,461 [56] Initiated set tenant config
+2020-04-28 13:58:19,478 [56] Tenant configuration not found for the tenant - localhost
+2020-04-28 13:58:19,478 [56] Session information has been successfully set to the tenant http://localhost:3030/reporting
+2020-04-28 14:03:19,457 [11] Initiated get tenant config
+2020-04-28 14:03:19,457 [11] Initiate set tenant config
+2020-04-28 14:03:19,457 [11] Initiated set tenant config
+2020-04-28 14:03:20,903 [11] Tenant configuration not found for the tenant - localhost
+2020-04-28 14:03:20,903 [11] Session information has been successfully set to the tenant http://localhost:3030/reporting

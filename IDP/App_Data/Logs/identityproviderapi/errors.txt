@@ -1,0 +1,444 @@
+#Software: identityproviderapi 
+#Date: 2020-04-28 12:51:28,980 
+#Fields: date thread namespace methodname message exception
+2020-04-28 12:51:28,993 [29] ERROR Error while getting system settings properties
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Data.SqlRelationalDataAdapter.ExecuteReaderQuery(String query) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base.Data\DataProvider\SqlRelationalDataAdapter.cs:line 355
+   at Syncfusion.Server.Base.GlobalAppSettings.GetSystemSettings() in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Environment\GlobalAppSettings.cs:line 577
+2020-04-28 12:51:32,282 [8] ERROR 
+Error code:ConnectionStringEmpty,
+Status message:Connection string is empty.,
+Returned from:Syncfusion.Server.Base.Data.SqlRelationalDataAdapter Syncfusion.Server.Base.DataClasses.Result ExecuteReaderQuery(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Data.SqlRelationalDataAdapter.ExecuteReaderQuery(String query) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base.Data\DataProvider\SqlRelationalDataAdapter.cs:line 355
+   at Syncfusion.Server.Base.TenantInformationManagement.GetActiveTenantList() in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5378
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetActiveTenants() in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 83
+2020-04-28 12:51:32,302 [8] ERROR 
+Status code:ConnectionStringEmpty,
+Status message:Connection string is empty.,
+Returned from:Syncfusion.Server.Base.Data.SqlRelationalDataAdapter Syncfusion.Server.Base.DataClasses.Result ExecuteReaderQuery(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Data.SqlRelationalDataAdapter.ExecuteReaderQuery(String query) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base.Data\DataProvider\SqlRelationalDataAdapter.cs:line 355
+   at Syncfusion.Server.Base.TenantInformationManagement.GetActiveTenantList() in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5378
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetActiveTenants() in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 92
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetActiveTenants() in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 76
+2020-04-28 12:51:32,325 [8] ERROR 
+Error code:ConnectionStringEmpty,
+Status message:Connection string is empty.,
+Returned from:Syncfusion.Server.Base.Data.SqlRelationalDataAdapter Syncfusion.Server.Base.DataClasses.Result ExecuteReaderQuery(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Data.SqlRelationalDataAdapter.ExecuteReaderQuery(String query) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base.Data\DataProvider\SqlRelationalDataAdapter.cs:line 355
+   at Syncfusion.Server.Base.TenantInformationManagement.GetActiveTenantList() in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5378
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetActiveTenants() in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 92
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetActiveTenants() in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 81
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2020-04-28 12:51:33,154 [10] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:51:33,342 [10] ERROR 
+Error code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 27
+2020-04-28 12:51:33,342 [10] ERROR 
+Status code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 36
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 30
+2020-04-28 12:51:33,343 [10] ERROR 
+Error code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 36
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2020-04-28 12:51:33,345 [8] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:51:33,348 [8] ERROR 
+Error code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 27
+2020-04-28 12:51:33,348 [8] ERROR 
+Status code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 36
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 30
+2020-04-28 12:51:33,349 [8] ERROR 
+Error code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 36
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2020-04-28 12:51:33,453 [9] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:51:33,454 [9] ERROR 
+Error code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 27
+2020-04-28 12:51:33,455 [9] ERROR 
+Status code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 36
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 30
+2020-04-28 12:51:33,455 [9] ERROR 
+Error code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 36
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2020-04-28 12:51:33,461 [27] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:51:33,463 [27] ERROR 
+Error code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 27
+2020-04-28 12:51:33,463 [27] ERROR 
+Status code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 36
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 30
+2020-04-28 12:51:33,463 [27] ERROR 
+Error code:InternalServerError,
+Status message:Internal Server Error.,
+Returned from:Syncfusion.Server.Base.TenantInformationManagement Syncfusion.Server.Base.DataClasses.OnPremise.TenantAppInfo GetTenantDetailsByIdentifier(System.String)
+
+Syncfusion.Server.Base.DataClasses.ApiException: Exception of type 'Syncfusion.Server.Base.DataClasses.ApiException' was thrown.
+   at Syncfusion.Server.Base.Helpers.ExceptionHelper.ThrowException(HttpStatusCode httpStatusCode, ErrorCode errorCode, MethodBase methodBase) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\Helpers\ExceptionHelper.cs:line 12
+   at Syncfusion.Server.Base.TenantInformationManagement.GetTenantDetailsByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 5287
+   at Syncfusion.Server.IdentityProvider.API.Models.TenantsModel.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Models\TenantsModel.cs:line 36
+   at Syncfusion.Server.IdentityProvider.API.Controllers.TenantsController.GetTenantByIdentifier(String tenantIdentifier) in D:\v2.2-sp2\arm-test\tm\IdentityProvider.API\Syncfusion.Server.IdentityProvider.API\Controllers\TenantsController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2020-04-28 12:53:15,719 [36] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:15,817 [9] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:15,823 [12] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:15,828 [30] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:15,835 [38] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:18,300 [10] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:18,913 [36] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:19,031 [38] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:19,152 [10] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:19,185 [42] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:21,186 [6] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:21,239 [36] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:21,244 [9] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:21,249 [6] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 12:53:21,403 [36] ERROR Exception while getting license settings from schema / custom plan
+System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+   at System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at Syncfusion.Server.Base.Encryption.TokenCryptography.Decrypt(String encryptedToken)
+   at Syncfusion.Server.Base.TenantInformationManagement.GetLicenseSettingsFromSchema(String licenseSchema, SaaSPlan planId, Guid tenantInfoId) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 4722
+2020-04-28 12:53:25,532 [6] ERROR Exception while getting license settings from schema / custom plan
+System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+   at System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at Syncfusion.Server.Base.Encryption.TokenCryptography.Decrypt(String encryptedToken)
+   at Syncfusion.Server.Base.TenantInformationManagement.GetLicenseSettingsFromSchema(String licenseSchema, SaaSPlan planId, Guid tenantInfoId) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 4722
+2020-04-28 12:53:25,538 [6] ERROR Exception while getting license settings from schema / custom plan
+System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+   at System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at Syncfusion.Server.Base.Encryption.TokenCryptography.Decrypt(String encryptedToken)
+   at Syncfusion.Server.Base.TenantInformationManagement.GetLicenseSettingsFromSchema(String licenseSchema, SaaSPlan planId, Guid tenantInfoId) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 4722
+2020-04-28 12:53:25,853 [36] ERROR Exception while getting license settings from schema / custom plan
+System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+   at System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at Syncfusion.Server.Base.Encryption.TokenCryptography.Decrypt(String encryptedToken)
+   at Syncfusion.Server.Base.TenantInformationManagement.GetLicenseSettingsFromSchema(String licenseSchema, SaaSPlan planId, Guid tenantInfoId) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 4722
+2020-04-28 12:53:25,864 [9] ERROR Exception while getting license settings from schema / custom plan
+System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+   at System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at Syncfusion.Server.Base.Encryption.TokenCryptography.Decrypt(String encryptedToken)
+   at Syncfusion.Server.Base.TenantInformationManagement.GetLicenseSettingsFromSchema(String licenseSchema, SaaSPlan planId, Guid tenantInfoId) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 4722
+2020-04-28 12:53:25,983 [6] ERROR Exception while getting license settings from schema / custom plan
+System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+   at System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at Syncfusion.Server.Base.Encryption.TokenCryptography.Decrypt(String encryptedToken)
+   at Syncfusion.Server.Base.TenantInformationManagement.GetLicenseSettingsFromSchema(String licenseSchema, SaaSPlan planId, Guid tenantInfoId) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 4722
+2020-04-28 12:53:27,122 [6] ERROR Exception while getting license settings from schema / custom plan
+System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+   at System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at Syncfusion.Server.Base.Encryption.TokenCryptography.Decrypt(String encryptedToken)
+   at Syncfusion.Server.Base.TenantInformationManagement.GetLicenseSettingsFromSchema(String licenseSchema, SaaSPlan planId, Guid tenantInfoId) in D:\v2.2-sp2\arm-test\tm\Base\Syncfusion.Server.Base\TenantManagement\TenantInformationManagement.cs:line 4722
+2020-04-28 12:58:19,447 [35] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:03:19,445 [88] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:08:19,510 [81] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:13:19,444 [131] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:18:19,448 [133] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:23:19,455 [157] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:28:19,453 [156] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:33:19,451 [133] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:38:19,469 [112] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:43:20,209 [98] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:48:19,467 [86] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:53:19,478 [69] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 13:58:19,467 [54] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-04-28 14:03:19,466 [35] ERROR Application Error - Server's Last Error
+System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)

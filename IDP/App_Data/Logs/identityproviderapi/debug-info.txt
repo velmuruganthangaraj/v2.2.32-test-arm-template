@@ -1,0 +1,184 @@
+#Software: identityproviderapi 
+#Date: 2020-04-28 12:51:28,949 
+#Fields: date thread namespace methodname message 
+2020-04-28 12:51:32,032 [8] Requesting API Authentication: 
+2020-04-28 12:51:32,033 [8] Is installer token: 
+2020-04-28 12:51:32,033 [8] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:51:32,192 [8] Unprotecting the token
+2020-04-28 12:51:33,220 [10] Requesting API Authentication: 
+2020-04-28 12:51:33,220 [10] Is installer token: 
+2020-04-28 12:51:33,220 [10] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:51:33,220 [10] Unprotecting the token
+2020-04-28 12:51:33,346 [8] Requesting API Authentication: 
+2020-04-28 12:51:33,347 [8] Is installer token: 
+2020-04-28 12:51:33,347 [8] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:51:33,347 [8] Unprotecting the token
+2020-04-28 12:51:33,454 [9] Requesting API Authentication: 
+2020-04-28 12:51:33,454 [9] Is installer token: 
+2020-04-28 12:51:33,454 [9] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:51:33,454 [9] Unprotecting the token
+2020-04-28 12:51:33,462 [27] Requesting API Authentication: 
+2020-04-28 12:51:33,462 [27] Is installer token: 
+2020-04-28 12:51:33,462 [27] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:51:33,462 [27] Unprotecting the token
+2020-04-28 12:53:08,867 [26] Requesting API Authentication: 
+2020-04-28 12:53:08,867 [26] Is installer token: 
+2020-04-28 12:53:08,867 [26] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:08,873 [26] Request for refreshing system settings 
+2020-04-28 12:53:15,726 [36] Requesting API Authentication: 
+2020-04-28 12:53:15,726 [36] Is installer token: 
+2020-04-28 12:53:15,726 [36] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:15,726 [36] Unprotecting the token
+2020-04-28 12:53:15,818 [9] Requesting API Authentication: 
+2020-04-28 12:53:15,818 [9] Is installer token: 
+2020-04-28 12:53:15,818 [9] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:15,820 [9] Unprotecting the token
+2020-04-28 12:53:15,824 [12] Requesting API Authentication: 
+2020-04-28 12:53:15,824 [12] Is installer token: 
+2020-04-28 12:53:15,824 [12] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:15,824 [12] Unprotecting the token
+2020-04-28 12:53:15,830 [30] Requesting API Authentication: 
+2020-04-28 12:53:15,830 [30] Is installer token: 
+2020-04-28 12:53:15,830 [30] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:15,830 [30] Unprotecting the token
+2020-04-28 12:53:15,835 [38] Requesting API Authentication: 
+2020-04-28 12:53:15,835 [38] Is installer token: 
+2020-04-28 12:53:15,835 [38] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:15,835 [38] Unprotecting the token
+2020-04-28 12:53:18,303 [10] Requesting API Authentication: 
+2020-04-28 12:53:18,304 [10] Is installer token: 
+2020-04-28 12:53:18,304 [10] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:18,304 [10] Unprotecting the token
+2020-04-28 12:53:18,921 [36] Requesting API Authentication: 
+2020-04-28 12:53:18,922 [36] Is installer token: 
+2020-04-28 12:53:18,922 [36] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:18,922 [36] Unprotecting the token
+2020-04-28 12:53:19,033 [38] Requesting API Authentication: 
+2020-04-28 12:53:19,034 [38] Is installer token: 
+2020-04-28 12:53:19,034 [38] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:19,034 [38] Unprotecting the token
+2020-04-28 12:53:19,153 [10] Requesting API Authentication: 
+2020-04-28 12:53:19,153 [10] Is installer token: 
+2020-04-28 12:53:19,153 [10] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:19,153 [10] Unprotecting the token
+2020-04-28 12:53:19,186 [42] Requesting API Authentication: 
+2020-04-28 12:53:19,186 [42] Is installer token: 
+2020-04-28 12:53:19,186 [42] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:19,186 [42] Unprotecting the token
+2020-04-28 12:53:21,187 [6] Requesting API Authentication: 
+2020-04-28 12:53:21,187 [6] Is installer token: 
+2020-04-28 12:53:21,187 [6] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:21,187 [6] Unprotecting the token
+2020-04-28 12:53:21,240 [36] Requesting API Authentication: 
+2020-04-28 12:53:21,240 [36] Is installer token: 
+2020-04-28 12:53:21,240 [36] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:21,240 [36] Unprotecting the token
+2020-04-28 12:53:21,245 [9] Requesting API Authentication: 
+2020-04-28 12:53:21,245 [9] Is installer token: 
+2020-04-28 12:53:21,245 [9] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:21,245 [9] Unprotecting the token
+2020-04-28 12:53:21,250 [6] Requesting API Authentication: 
+2020-04-28 12:53:21,250 [6] Is installer token: 
+2020-04-28 12:53:21,251 [6] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:21,251 [6] Unprotecting the token
+2020-04-28 12:53:21,300 [36] Requesting API Authentication: 
+2020-04-28 12:53:21,300 [36] Is installer token: 
+2020-04-28 12:53:21,300 [36] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:21,301 [36] Unprotecting the token
+2020-04-28 12:53:21,387 [36] GetTenantDetails - jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:21,389 [36] Initiating GetLicenseSettingsFromSchema
+2020-04-28 12:53:21,389 [36] Encrypted License : jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,357 [6] Requesting API Authentication: 
+2020-04-28 12:53:25,357 [6] Is installer token: 
+2020-04-28 12:53:25,358 [6] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:25,358 [6] Unprotecting the token
+2020-04-28 12:53:25,531 [6] GetTenantDetails - jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,532 [6] Initiating GetLicenseSettingsFromSchema
+2020-04-28 12:53:25,532 [6] Encrypted License : jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,537 [6] GetDrm - jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,537 [6] Initiating GetLicenseSettingsFromSchema
+2020-04-28 12:53:25,537 [6] Encrypted License : jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,853 [36] GetTenantDetails - jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,853 [36] Initiating GetLicenseSettingsFromSchema
+2020-04-28 12:53:25,853 [36] Encrypted License : jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,857 [9] Requesting API Authentication: 
+2020-04-28 12:53:25,857 [9] Is installer token: 
+2020-04-28 12:53:25,857 [9] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:25,861 [9] Unprotecting the token
+2020-04-28 12:53:25,864 [9] GetTenantDetails - jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,864 [9] Initiating GetLicenseSettingsFromSchema
+2020-04-28 12:53:25,864 [9] Encrypted License : jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,973 [6] Requesting API Authentication: 
+2020-04-28 12:53:25,973 [6] Is installer token: 
+2020-04-28 12:53:25,973 [6] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:25,973 [6] Unprotecting the token
+2020-04-28 12:53:25,983 [6] GetTenantDetails - jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:25,983 [6] Initiating GetLicenseSettingsFromSchema
+2020-04-28 12:53:25,983 [6] Encrypted License : jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:27,110 [6] Requesting API Authentication: 
+2020-04-28 12:53:27,110 [6] Is installer token: 
+2020-04-28 12:53:27,110 [6] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:27,113 [6] Unprotecting the token
+2020-04-28 12:53:27,122 [6] GetTenantDetails - jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:27,122 [6] Initiating GetLicenseSettingsFromSchema
+2020-04-28 12:53:27,122 [6] Encrypted License : jOS8fQeRafN+OmuhkdZzib0vs/mdtxFFcqEvSrU+PgxyYJpSQ0aFq3fJQH8lY9dBEyuxDuN6o0St2yX46CmVbqz8JwG8rjHiUlw2FdR8y8vkmeUSFtf82U3fUq+8nemokA4r0JMk/K8mSkbAE6/2E9KodobNGV+uOQSgl4cmcaT4zH8fdfwbS+AeUB0jUmOYJpmOxGYJnRDcolin9CW6g8wv7FSEcYpIPST26ifmxGSLG+W+hVYNY7oXV3Pk4iqBirlGftktvkvaG1ua0xAKacjq0zND/JLWj2fmouQqGhZ1M+dvKyLiTcvIVBWkCxRXdFEaf7pCuGWuxVlhSgfBvq+ZWTuevkoerL6Dv3xANqnMs7rpSRJSF62B4q7MNSa5M/uvdiQ9d/chGsENg1YxS3ZSk6/tRtbP5H4Pmog0rFmkvvImEyGFmYrBo5rq5vHm7vj3O8RlBXWi7oaoNxopp5aoTAfEILO1E0+UGf6rzWDiyYa3JzPtRALnVbWi8fW7vNAGp+sYtcflwCf/EUbz4GJC1bYzU5GnL0y9ijQ+MywNJ4pZWLtA4wDIhrYCF9eB1/yViU/4EtAOWNUeav23T3miiurnc1DMHeM9KRDg/c7+QGhNySPcuYCjYlOsW+XqXTzsxji0okUEUvTk5seJIdqELLR42jNya5s4NW21Mc9lE7iGzOMeJWyWAHqV8Wnj3Rmmmf2F+9yKL3Qlx7GEeAD2Jswo3+iMPm54VGpiMuHOAm/WM63bxl9w/1EpXpM1vRZux8WBoRjH9BGMKSw0lQ==
+2020-04-28 12:53:30,861 [44] Requesting API Authentication: 
+2020-04-28 12:53:30,861 [44] Is installer token: 
+2020-04-28 12:53:30,861 [44] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:53:30,863 [44] Unprotecting the token
+2020-04-28 12:58:19,450 [35] Requesting API Authentication: 
+2020-04-28 12:58:19,450 [35] Is installer token: 
+2020-04-28 12:58:19,450 [35] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 12:58:19,451 [35] Unprotecting the token
+2020-04-28 13:03:20,488 [88] Requesting API Authentication: 
+2020-04-28 13:03:20,488 [88] Is installer token: 
+2020-04-28 13:03:20,488 [88] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:03:20,488 [88] Unprotecting the token
+2020-04-28 13:08:19,516 [81] Requesting API Authentication: 
+2020-04-28 13:08:19,516 [81] Is installer token: 
+2020-04-28 13:08:19,516 [81] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:08:19,517 [81] Unprotecting the token
+2020-04-28 13:13:19,448 [131] Requesting API Authentication: 
+2020-04-28 13:13:19,448 [131] Is installer token: 
+2020-04-28 13:13:19,448 [131] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:13:19,448 [131] Unprotecting the token
+2020-04-28 13:18:20,130 [133] Requesting API Authentication: 
+2020-04-28 13:18:20,130 [133] Is installer token: 
+2020-04-28 13:18:20,130 [133] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:18:20,130 [133] Unprotecting the token
+2020-04-28 13:23:19,459 [157] Requesting API Authentication: 
+2020-04-28 13:23:19,459 [157] Is installer token: 
+2020-04-28 13:23:19,459 [157] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:23:19,459 [157] Unprotecting the token
+2020-04-28 13:28:20,912 [156] Requesting API Authentication: 
+2020-04-28 13:28:20,912 [156] Is installer token: 
+2020-04-28 13:28:20,913 [156] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:28:20,913 [156] Unprotecting the token
+2020-04-28 13:33:19,455 [133] Requesting API Authentication: 
+2020-04-28 13:33:19,455 [133] Is installer token: 
+2020-04-28 13:33:19,456 [133] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:33:19,456 [133] Unprotecting the token
+2020-04-28 13:38:20,256 [112] Requesting API Authentication: 
+2020-04-28 13:38:20,256 [112] Is installer token: 
+2020-04-28 13:38:20,256 [112] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:38:20,256 [112] Unprotecting the token
+2020-04-28 13:43:20,210 [98] Requesting API Authentication: 
+2020-04-28 13:43:20,210 [98] Is installer token: 
+2020-04-28 13:43:20,210 [98] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:43:20,210 [98] Unprotecting the token
+2020-04-28 13:48:20,416 [86] Requesting API Authentication: 
+2020-04-28 13:48:20,416 [86] Is installer token: 
+2020-04-28 13:48:20,416 [86] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:48:20,416 [86] Unprotecting the token
+2020-04-28 13:53:19,482 [69] Requesting API Authentication: 
+2020-04-28 13:53:19,486 [69] Is installer token: 
+2020-04-28 13:53:19,486 [69] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:53:19,486 [69] Unprotecting the token
+2020-04-28 13:58:19,471 [54] Requesting API Authentication: 
+2020-04-28 13:58:19,471 [54] Is installer token: 
+2020-04-28 13:58:19,471 [54] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 13:58:19,471 [54] Unprotecting the token
+2020-04-28 14:03:20,857 [35] Requesting API Authentication: 
+2020-04-28 14:03:20,857 [35] Is installer token: 
+2020-04-28 14:03:20,857 [35] Either URL is not users, groups and apps or X-Installer-Token is passed
+2020-04-28 14:03:20,857 [35] Unprotecting the token
