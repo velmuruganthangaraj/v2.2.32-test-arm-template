@@ -260,7 +260,7 @@ $(document).ready(function () {
                                         $("#system-settings-user-account-container").slideDown("slow");
                                         $("body").removeClass("startup-page-container-body");
                                     }
-                                    else if (isAzureApplication && !isBoldBI && selfHosted) {
+                                    else if (isBoldReports && selfHosted) {
                                         $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
                                         $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage).slideDown();
                                         $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
@@ -268,6 +268,22 @@ $(document).ready(function () {
                                         $("#system-settings-filestorage-container").slideDown("slow");
                                         $(".custom-endpoint-form-element").hide();
                                         $("#blob-storage-form").hide();
+                                        $("#report-storage").hide();
+                                        storageButtonValue = "tenant";
+                                        $(".storage-checkbox").hide("slow");
+                                        $("body").removeClass("startup-page-container-body");
+                                    }
+                                    else if (isAzureApplication) {
+                                        $("#file-storage").prop("disabled", true);
+                                        $("#blob-storage").prop("checked", true);
+                                        $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
+                                        $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage).slideDown();
+                                        $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
+                                        $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                        $("#system-settings-filestorage-container").slideDown("slow");
+                                        $(".custom-endpoint-form-element").hide();
+                                        $(".content-value").hide();
+                                        $("#blob-storage-form").slideDown("slow");
                                         $("#report-storage").hide();
                                         storageButtonValue = "tenant";
                                         $(".storage-checkbox").hide("slow");
@@ -1248,15 +1264,33 @@ $(document).on("click", "#sql-existing-db-submit", function () {
                                                 $("#system-settings-user-account-container").slideDown("slow");
                                                 $("body").removeClass("startup-page-container-body");
                                             }
-                                            else if (isAzureApplication && !isBoldBI && selfHosted) {
+                                            else if (isBoldReports && selfHosted) {
                                                 $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
                                                 $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage).slideDown();
                                                 $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
                                                 $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
                                                 $("#system-settings-filestorage-container").slideDown("slow");
                                                 $(".custom-endpoint-form-element").hide();
+                                                $("#blob-storage-form").hide();
                                                 $("#report-storage").hide();
-                                                $(".storage-checkbox").hide();
+                                                storageButtonValue = "tenant";
+                                                $(".storage-checkbox").hide("slow");
+                                                $("body").removeClass("startup-page-container-body");
+                                            }
+                                            else if (isAzureApplication) {
+                                                $("#file-storage").prop("disabled", true);
+                                                $("#blob-storage").prop("checked", true);
+                                                $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
+                                                $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage).slideDown();
+                                                $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
+                                                $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                                $("#system-settings-filestorage-container").slideDown("slow");
+                                                $(".custom-endpoint-form-element").hide();
+                                                $("#blob-storage-form").slideDown("slow");
+                                                $("#report-storage").hide();
+                                                $(".content-value").hide();
+                                                storageButtonValue = "tenant";
+                                                $(".storage-checkbox").hide("slow");
                                                 $("body").removeClass("startup-page-container-body");
                                             }
                                         } else {
@@ -1634,21 +1668,38 @@ function connectDatabase(element, actionType) {
                             data: JSON.stringify({ ServerType: databaseType, serverName: window.serverName, Port: window.portNumber, userName: window.login, password: window.password, IsWindowsAuthentication: window.IsWindowsAuthentication, databaseName: window.databaseName, IsNewDatabase: true })
                         },
                         success: function (dataResult) {
-                            if ((dataResult.Data.key && !isBoldBI && isAzureApplication && selfHosted) && $("#dialog-body-container").find(".storage-form").length <= 0) {
-                                $("#system-settings-db-selection-container").hide();
-                                $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
-                                $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage2).slideDown();
-                                $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
-                                $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
-                                $("#system-settings-filestorage-container").slideDown("slow");
-                                $(".custom-endpoint-form-element").hide();
-                                $("#blob-storage-form").hide();
-                                $(".storage-checkbox").hide("slow");
-                                $("#tenant-storage").hide();
-                                $("#report-storage").show();
+                            if (dataResult.Data.key) {
+                                if ((isBoldReports && selfHosted) && $("#dialog-body-container").find(".storage-form").length <= 0) {
+                                    $("#system-settings-db-selection-container").hide();
+                                    $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
+                                    $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage2).slideDown();
+                                    $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
+                                    $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                    $("#system-settings-filestorage-container").slideDown("slow");
+                                    $(".custom-endpoint-form-element").hide();
+                                    $("#blob-storage-form").hide();
+                                    $(".storage-checkbox").hide("slow");
+                                    $("#tenant-storage").hide();
+                                    $("#report-storage").show();
+                                }
+                                else if (isAzureApplication && $("#dialog-body-container").find(".storage-form").length <= 0) {
+                                    $("#system-settings-db-selection-container").hide();
+                                    $("#file-storage").prop("disabled", true);
+                                    $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
+                                    $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage2).slideDown();
+                                    $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
+                                    $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                    $("#system-settings-filestorage-container").slideDown("slow");
+                                    $(".custom-endpoint-form-element").hide();
+                                    $(".content-value").hide();
+                                    $("#blob-storage-form").slideDown("slow");
+                                    $(".storage-checkbox").show("slow");
+                                    $("#tenant-storage").hide();
+                                    $("#report-storage").show();
+                                }
+                                else
+                                    result = dataResult;
                             }
-                            else
-                                result = dataResult;
                         }
                     });
                 }

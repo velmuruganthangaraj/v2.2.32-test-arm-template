@@ -1103,25 +1103,43 @@ function nextToStoragePage() {
     $("#header-title").hide();
     $("#header-description").hide();
     moveStepper("front", 3);
-    if (storageFlag == 0) {
-        $(".storage-checkbox").hide("slow");
+    if (isAzureApplication) {
+        $(".storage-checkbox").show("slow");
+        $("#file-storage").prop("disabled", true);
+        $(".tenant-registration-form, #step-1").removeClass("show").addClass("hide");
+        $(".tenant-user-form, #step-3").removeClass("show").addClass("hide");
+        $(".tenant-database-form, #step-2").removeClass("show").addClass("hide");
+        $(".custom-endpoint-form-element, .content-value, .file-storage-button").hide();
+        $(".storage-form, #step-2").removeClass("hide").addClass("show");
+        $(".storage-form #system-settings-filestorage-container").show();
+        $("#blob-storage-form").slideDown("slow");
+        $(".storage-form #blob-storage-form").addClass("site-creation");
+        $("#dialog-body-container").removeClass("grid-alignment");
+        $("#details-next").attr("value", "Next");
+        $("#details-next").removeClass("intermediate-db").addClass("user");
+        $("#details-next").removeAttr("disabled").addClass("next-alignment");
     }
     else {
-        $(".storage-checkbox").show("slow");
-        storageFlag ++;
+        if (storageFlag == 0) {
+            $(".storage-checkbox").hide("slow");
+        }
+        else {
+            $(".storage-checkbox").show("slow");
+            storageFlag++;
+        }
+        $(".tenant-registration-form, #step-1").removeClass("show").addClass("hide");
+        $(".tenant-user-form, #step-3").removeClass("show").addClass("hide");
+        $(".tenant-database-form, #step-2").removeClass("show").addClass("hide");
+        $(".custom-endpoint-form-element, .file-storage-button").hide();
+        $(".storage-checkbox").hide();
+        $(".storage-form, #step-2").removeClass("hide").addClass("show");
+        $(".storage-form #system-settings-filestorage-container").show();
+        $(".storage-form #blob-storage-form").addClass("site-creation");
+        $("#dialog-body-container").removeClass("grid-alignment");
+        $("#details-next").attr("value", "Next");
+        $("#details-next").removeClass("intermediate-db").addClass("user");
+        $("#details-next").removeAttr("disabled").addClass("next-alignment");
     }
-    $(".tenant-registration-form, #step-1").removeClass("show").addClass("hide");
-    $(".tenant-user-form, #step-3").removeClass("show").addClass("hide");
-    $(".tenant-database-form, #step-2").removeClass("show").addClass("hide");
-    $(".custom-endpoint-form-element, .file-storage-button").hide();
-    
-    $(".storage-form, #step-2").removeClass("hide").addClass("show");
-    $(".storage-form #system-settings-filestorage-container").show();
-    $(".storage-form #blob-storage-form").addClass("site-creation");
-    $("#dialog-body-container").removeClass("grid-alignment");
-    $("#details-next").attr("value", "Next");
-    $("#details-next").removeClass("intermediate-db").addClass("user");
-    $("#details-next").removeAttr("disabled").addClass("next-alignment");
 }
 
 function preserveStorageFormData() {

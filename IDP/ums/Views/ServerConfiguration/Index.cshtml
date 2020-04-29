@@ -42,6 +42,7 @@
         var storageUrl = "@Url.Content(HttpRuntime.AppDomainAppVirtualPath + "/Content/images/" + GlobalAppSettings.Branding + "/application/file-storage-image.svg")";
         var isBoldBI = "@(GlobalAppSettings.BrandingDisplayName == AppBranding.BoldBI.DisplayName)".toLowerCase() == "true";
         var isAzureApplication = ("@ViewBag.IsAzureApplication".toLowerCase() === "true");
+        var isBoldReports = "@(GlobalAppSettings.BrandingDisplayName == AppBranding.BoldReports.DisplayName)".toLowerCase() == "true";
         var selfHosted = ("@ViewBag.selfHosted".toLowerCase() === "true");
         $(function () {
             // Declare a proxy to reference the hub.

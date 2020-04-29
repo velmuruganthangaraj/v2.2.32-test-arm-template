@@ -47,6 +47,7 @@
         var umsSitesUrl = "@Url.Action("Sites", "TenantsManagement")";
         var isBoldBI = "@(GlobalAppSettings.BrandingDisplayName == AppBranding.BoldBI.DisplayName)".toLowerCase() == "true";
         var isAzureApplication = ("@ViewBag.IsAzureApplication".toLowerCase() === "true");
+        var isBoldReports = "@(GlobalAppSettings.BrandingDisplayName == AppBranding.BoldReports.DisplayName)".toLowerCase() == "true";
         var selfHosted = ("@ViewBag.selfHosted".toLowerCase() === "true");
     </script>
 </head>
