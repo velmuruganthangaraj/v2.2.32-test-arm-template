@@ -28,13 +28,16 @@
         var getAllDatabaseUrl = "@Url.Action("GetAllDatabase", "ServerConfiguration")";
         var checkTableExistsUrl = "@Url.Action("CheckTableAlreadyExistsForServer", "ServerConfiguration")";
         var storageType = "@ViewBag.StorageType";
+        var systemSetting =  @Html.Raw(Json.Encode(ViewBag.systemSetting));
         var blobExist = "@Url.Action("IsBlobExists", "ServerConfiguration")";
         var configuredDatabaseSettings = @Html.Raw(Json.Encode(ViewBag.ConfiguredDatabaseDetails));
         var checkDatabaseExistForServerUrl = "@Url.Action("CheckDatabaseExistsForServer", "ServerConfiguration")";
         var serverSetupImageUrl = "@Url.Content(HttpRuntime.AppDomainAppVirtualPath + "/Content/images/" + GlobalAppSettings.Branding + "/application/server-startup-image.svg")";
         var dataConnectorsCount = "@CloudAppConfig.DataConnectorsCount";
         var isBoldBI = "@(GlobalAppSettings.BrandingDisplayName == AppBranding.BoldBI.DisplayName)".toLowerCase() == "true";
-
+        var storageUrl = "@Url.Content(HttpRuntime.AppDomainAppVirtualPath + "/Content/images/" + GlobalAppSettings.Branding + "/application/file-storage-image.svg")";
+        var isAzureApplication = ("@ViewBag.IsAzureApplication".toLowerCase() === "true");
+        var selfHosted = ("@ViewBag.selfHosted".toLowerCase() === "true");
         $(function () {
             // Declare a proxy to reference the hub.
             var statusTracker = $.connection.progressHub;
@@ -48,6 +51,8 @@
             });
         });
         $(document).ready(function () {
+            $("#blob-storage-form").hide();
+            $("#system-settings-filestorage-container").hide();
             $('#auth-type-dropdown').removeClass("hide").addClass("show");
             $("#system-settings-db-selection-container").slideDown("slow");
             if (configuredDatabaseSettings != undefined && configuredDatabaseSettings != null) {
@@ -87,6 +92,7 @@
 
                 configuredDatabaseSettings = null;
             }
+            
 
             $(document).click(function (e) {
                 if (e.target.id != "info-icon") {
@@ -119,13 +125,21 @@
                     <div class="image-container">
                         <img class="startup-image" src="@Url.Content(HttpRuntime.AppDomainAppVirtualPath + "/Content/images/" + appBranding + "/application/server-dashboard-setup.svg")" />
                         <div class="startup-content">
-                            <span class="first-content">[[[Step 3: Let’s configure your site]]]</span>
+                            @if (appBranding == AppBranding.BoldBI.Identifier)
+                            {
+                                <span class="first-content">[[[Step 3: Let’s configure your site]]]</span>
+                            }
+                            else
+                            {
+                                <span class="first-content">[[[Step 4: Let’s configure your site]]]</span>
+                            }
                             <span class="second-content">[[[This is where we store your ]]]@item,[[[ users, and their access permissions.]]]</span>
                             <a href="@(helpUrl + (GlobalAppSettings.BrandingDisplayName == AppBranding.BoldBI.DisplayName ? "?id=7" : "?id=4023"))" target="_blank">[[[Need Help?]]]</a>
                         </div>
                     </div>
                 </div>
                 @Html.Partial("_DatabaseConfiguration")
+                @Html.Partial("_FileStorage")
             </div>
         </div>
     </div>

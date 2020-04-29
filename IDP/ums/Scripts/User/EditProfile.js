@@ -113,7 +113,6 @@ $(document).ready(function () {
         var isUpdated = $(".img-container").children("img").attr("src");
         var userId = $("#user-id").val();
         var isNewFile = false;
-
         if (isUpdated != tanantManagementServerResourceUrl + "/images/common/preview.jpg") {
             isNewFile = true;
 
@@ -227,7 +226,7 @@ $(document).ready(function () {
     });
 
     $("#upload-picture").ejUploadbox({
-        saveUrl: fileUploadUrl + "?imageType=profileimage&&userName=" + $("#user-name").val() + "&&timeStamp=" + currentDate,
+        saveUrl: "/ums/en-us/fileupload/upload" + "?imageType=profileimage&&userName=" + $("#user-name").val() + "&&timeStamp=" + currentDate,
         autoUpload: true,
         showFileDetails: false,
         fileSize: 31457280,

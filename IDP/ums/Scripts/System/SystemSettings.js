@@ -8,7 +8,12 @@ var databaseValidationMessage = window.TM.App.LocalizationContent.OneOrMoreError
 var isToGetIntermediateDbDetails = false;
 var systemSettingsDetails, intermediateDbDetails;
 var isNewServerDB = true, isNewIntermediateDB = true;
+var storagetype = window.storageType;
+var storageButtonValue; 
 $(document).ready(function () {
+    $("#blob-storage-form").hide();
+    $("#report-storage").hide();
+    $("#system-settings-filestorage-container").hide();
     isToGetIntermediateDbDetails = ($("#get-intermediate-db-configuration").val() === "true");
 
     $("#messageBox").ejDialog({
@@ -140,6 +145,69 @@ $(document).ready(function () {
         $(".validation-txt-errors").hide();
     });
 
+    $("input[name='Connection']").on("click change", function () {
+        var checkedVal = $("input[name='Connection']:checked").val();
+        var accountName = $("#txt-accountname").val();
+        var accessKey = $("#txt-accesskey").val();
+
+        if (checkedVal == "http" || checkedVal == "https") {
+            $(".custom-endpoint-form-element").hide();
+            var finalValue = "DefaultEndpointsProtocol=" + checkedVal + ";AccountName=" + accountName + ";AccountKey=" + accessKey;
+            $("#connection-string").val(finalValue);
+
+        } else {
+            var blobUrl = $("#txt-bloburl").val();
+
+            var finalValue = "BlobEndpoint=" + blobUrl + ";AccountName=" + accountName + ";AccountKey=" + accessKey;
+            $("#connection-string").val(finalValue);
+            $(".custom-endpoint-form-element").show();
+        }
+        $("div.placeholder").remove();
+        addPlacehoder("#system-settings-filestorage-container");
+        changeFooterPostion();
+    });
+
+    $("#txt-bloburl,#txt_tableurl,#txt_queueurl,#txt-accountname,#txt-accesskey").on("keyup", function () {
+        var checkedVal = $("input[name='Connection']:checked").val();
+        var accountName = $("#txt-accountname").val();
+        var accessKey = $("#txt-accesskey").val();
+        if (checkedVal == "http" || checkedVal == "https") {
+            var finalValue = "DefaultEndpointsProtocol=" + checkedVal + ";AccountName=" + accountName + ";AccountKey=" + accessKey;
+            $("#connection-string").val(finalValue);
+
+        } else {
+            var blobUrl = $("#txt-bloburl").val();
+
+            var finalValue = "BlobEndpoint=" + blobUrl + ";AccountName=" + accountName + ";AccountKey=" + accessKey;
+            $("#connection-string").val(finalValue);
+        }
+    });
+
+    $("input[name='IsBlobStorage']").on("click change", function () {
+        var checkedVal = $("input[name='IsBlobStorage']:checked").val();
+        if (checkedVal == "0") {
+            $("#blob-storage-form").hide("slow");
+            $(".content-value").slideDown("slow");
+            $(".storage-checkbox").hide("slow");
+            $(".azure-validation").css("display", "none");
+        } else {
+            $(".content-value").hide();
+            if (storageButtonValue === "tenant") {
+                $(".storage-checkbox").hide("slow");
+            }
+            else {
+                $(".storage-checkbox").show("slow");
+            }
+            $("#blob-storage-form").slideDown("slow");
+            $(".validation-txt-errors").hide();
+            $(".azure-validation").css("display", "none");
+            $(".has-error").removeClass("has-error");
+            $("div.placeholder").remove();
+        }
+        addPlacehoder("#system-settings-filestorage-container");
+        changeFooterPostion();
+    });
+
     $("#db-config-submit").on("click", function () {
         $(".has-error").removeClass("has-error");
         $(".validation-txt-errors").hide();
@@ -184,12 +252,27 @@ $(document).ready(function () {
                                     delete window.password;
                                     delete window.databaseName;
                                     delete window.sslEnabled;
-                                    $("#image-parent-container .startup-image").hide().attr("src", adminSetupImageUrl).fadeIn();
-                                    $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YoureAnAdmin).slideDown();
-                                    $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.AdminHaveControl).slideDown();
-                                    $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
-                                    $("#system-settings-user-account-container").slideDown("slow");
-                                    $("body").removeClass("startup-page-container-body");
+                                    if (isBoldBI) {
+                                        $("#image-parent-container .startup-image").hide().attr("src", adminSetupImageUrl).fadeIn();
+                                        $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YoureAnAdmin).slideDown();
+                                        $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.AdminHaveControl).slideDown();
+                                        $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                        $("#system-settings-user-account-container").slideDown("slow");
+                                        $("body").removeClass("startup-page-container-body");
+                                    }
+                                    else if (isAzureApplication && !isBoldBI && selfHosted) {
+                                        $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
+                                        $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage).slideDown();
+                                        $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
+                                        $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                        $("#system-settings-filestorage-container").slideDown("slow");
+                                        $(".custom-endpoint-form-element").hide();
+                                        $("#blob-storage-form").hide();
+                                        $("#report-storage").hide();
+                                        storageButtonValue = "tenant";
+                                        $(".storage-checkbox").hide("slow");
+                                        $("body").removeClass("startup-page-container-body");
+                                    }
                                 }
                                 else {
                                     $("#db-config-submit, #ds-db-config-submit").prop("disabled", false);
@@ -211,7 +294,6 @@ $(document).ready(function () {
                         $("#db_loader").hide();
                         errorContent = result.Data.value;
                         $(".database-name .database-error").html(databaseValidationMessage).show();
-
                     }
                 }
             );
@@ -673,6 +755,88 @@ $(document).ready(function () {
         enableOrDisableDatabaseFormElements($(this).is(":checked"));
         addTitleForDropdown(".database-dropdown-margin");
     });
+
+    $.validator.addMethod("IsValidEndPoint", function (value, element) {
+        return IsValidEndPoint(value);
+    }, window.TM.App.LocalizationContent.EndPoint);
+
+    $.validator.addMethod("IsCustomEndpoint", function (value, element) {
+        return IsCustomEndPoint(value, element);
+    }, window.TM.App.LocalizationContent.IsValidCustomEndPoint);
+    $.validator.addMethod("IsValidCustomEndPoint", function (value, element) {
+        return IsValidCustomEndPoint(value, element);
+    }, window.TM.App.LocalizationContent.IsValidCustomEndPoint);
+
+    $("#blob-storage-form").validate({
+        focusInvalid: false,
+        errorElement: "span",
+        onkeyup: function (element, event) {
+            if (event.keyCode != 9) {
+                isKeyUp = true;
+                $(element).valid();
+                isKeyUp = false;
+            }
+            else
+                true;
+        },
+        onfocusout: function (element) {
+            $(element).valid();
+        },
+        rules: {
+            accountname: {
+                isRequired: true,
+                hasWhiteSpace: false
+            },
+            endpoint: {
+                isRequired: true,
+                IsValidEndPoint: true
+            },
+            accesskey: {
+                isRequired: true
+            },
+            containername: {
+                required: true
+            },
+            bloburl: {
+                IsCustomEndpoint: true,
+                IsValidEndPoint: true,
+                IsValidCustomEndPoint: true
+            }
+        },
+        highlight: function (element) {
+            $(element).closest(".form-group").addClass("has-error");
+            $(element).parent().find(">.startup-validation").show();
+        },
+        unhighlight: function (element) {
+            $(element).closest(".form-group").removeClass("has-error");
+            $(element).parent().find(">.startup-validation").hide();
+            changeFooterPostion();
+        },
+        errorPlacement: function (error, element) {
+            $(element).parent().find(">.startup-validation").text(error.html());
+            changeFooterPostion();
+        },
+        messages: {
+            accountname: {
+                isRequired: window.TM.App.LocalizationContent.StorageAccount
+            },
+            endpoint: {
+                isRequired: window.TM.App.LocalizationContent.EndPoint
+            },
+            accesskey: {
+                isRequired: window.TM.App.LocalizationContent.AccessKey
+            },
+            containername: {
+                required: window.TM.App.LocalizationContent.ContainerName
+            },
+            bloburl: {
+                IsCustomEndpoint: window.TM.App.LocalizationContent.BlobUrl,
+                IsValidEndPoint: window.TM.App.LocalizationContent.IsValidBlobUrl,
+                IsValidCustomEndPoint: window.TM.App.LocalizationContent.IsValidCustomBlobUrl
+            }
+        }
+
+    });
 });
 
 function redirectToDataMigration() {
@@ -857,7 +1021,9 @@ function getFormData() {
             AzureBlobStorageUri: window.endpoint,
             AzureBlobStorageContainerName: window.containername,
             ConnectionType: window.connectionType,
-            ConnectionString: window.azureconnectionString
+            ConnectionString: window.azureconnectionString,
+            AccountName: window.accountname,
+            AccessKey: window.accesskey
         };
 
         var appDetails = {
@@ -1074,11 +1240,25 @@ $(document).on("click", "#sql-existing-db-submit", function () {
                                             delete window.password;
                                             delete window.databaseName;
                                             delete window.sslEnabled;
-                                            $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YoureAnAdmin).slideDown();
-                                            $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.AdminHaveControl).slideDown();
-                                            $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
-                                            $("#system-settings-user-account-container").slideDown("slow");
-                                            $("body").removeClass("startup-page-container-body");
+                                            if (isBoldBI) {
+                                                $("#image-parent-container .startup-image").hide().attr("src", adminSetupImageUrl).fadeIn();
+                                                $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YoureAnAdmin).slideDown();
+                                                $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.AdminHaveControl).slideDown();
+                                                $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                                $("#system-settings-user-account-container").slideDown("slow");
+                                                $("body").removeClass("startup-page-container-body");
+                                            }
+                                            else if (isAzureApplication && !isBoldBI && selfHosted) {
+                                                $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
+                                                $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage).slideDown();
+                                                $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
+                                                $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                                $("#system-settings-filestorage-container").slideDown("slow");
+                                                $(".custom-endpoint-form-element").hide();
+                                                $("#report-storage").hide();
+                                                $(".storage-checkbox").hide();
+                                                $("body").removeClass("startup-page-container-body");
+                                            }
                                         } else {
                                             $("#sql-existing-db-submit, #sql-existing-ds-db-submit").prop("disabled", false);
                                             $("#db_loader").hide();
@@ -1454,7 +1634,21 @@ function connectDatabase(element, actionType) {
                             data: JSON.stringify({ ServerType: databaseType, serverName: window.serverName, Port: window.portNumber, userName: window.login, password: window.password, IsWindowsAuthentication: window.IsWindowsAuthentication, databaseName: window.databaseName, IsNewDatabase: true })
                         },
                         success: function (dataResult) {
-                            result = dataResult;
+                            if ((dataResult.Data.key && !isBoldBI && isAzureApplication && selfHosted) && $("#dialog-body-container").find(".storage-form").length <= 0) {
+                                $("#system-settings-db-selection-container").hide();
+                                $("#image-parent-container .startup-image").hide().attr("src", storageUrl).fadeIn();
+                                $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YourStorage2).slideDown();
+                                $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.StorageMsg).slideDown();
+                                $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                                $("#system-settings-filestorage-container").slideDown("slow");
+                                $(".custom-endpoint-form-element").hide();
+                                $("#blob-storage-form").hide();
+                                $(".storage-checkbox").hide("slow");
+                                $("#tenant-storage").hide();
+                                $("#report-storage").show();
+                            }
+                            else
+                                result = dataResult;
                         }
                     });
                 }
@@ -1529,7 +1723,8 @@ function getDatabaseFormValues(intermediateDb) {
                 ConnectionString: window.connectionString,
                 ServerType: serverType,
                 AuthenticationType: authenticationType
-            }
+            },
+            StorageType: $("input[name='IsBlobStorage']:checked").val(),
         };
     }
     else {
@@ -1541,14 +1736,16 @@ function getDatabaseFormValues(intermediateDb) {
                 AuthenticationType: authenticationType,
                 DatabaseName: databaseName,
                 Prefix: prefix
-            }
+            },
+            StorageType: $("input[name='IsBlobStorage']:checked").val(),
         };
     }
 
     return formData;
 }
 
-function postSystemSettingsData(systemSettingsDetails, intermediateDbDetails, userEmail, tenantDetails, isAddFromServer) {
+
+function postSystemSettingsData(systemSettingsDetails, azuredetails, intermediateDbDetails, userEmail, tenantDetails, isAddFromServer) {
     var elem = $(".startup-page-container-body");
     elem.ejWaitingPopup({ text: " " });
     $(".e-text").find(".configuration-status").remove();
@@ -1560,7 +1757,7 @@ function postSystemSettingsData(systemSettingsDetails, intermediateDbDetails, us
     var userEmailData = (userEmail != undefined && userEmail != null) ? JSON.stringify(userEmail) : $("#tenant-email").val();
     var tenantDetailsData = (tenantDetails != undefined && tenantDetails != null) ? JSON.stringify(tenantDetails) : null;
     var intermediateDbData = (intermediateDbDetails != undefined && intermediateDbDetails != null) ? JSON.stringify(intermediateDbDetails) : null;
-    setSystemSettingsData = { systemSettingsData: JSON.stringify(systemSettingsDetails), userEmail: userEmailData, tenantDetails: tenantDetailsData, intermediateDatabaseDetails: intermediateDbData, isNewDatabase : isNewDatabase, isNewImDatabase : isNewImDatabase };
+    setSystemSettingsData = { systemSettingsData: JSON.stringify(systemSettingsDetails), azureData: JSON.stringify(azuredetails), userEmail: userEmailData, tenantDetails: tenantDetailsData, intermediateDatabaseDetails: intermediateDbData, isNewDatabase : isNewDatabase, isNewImDatabase : isNewImDatabase };
     $.ajax({
         type: "POST", url: setSystemSettingsUrl, data: setSystemSettingsData,
         success: function (setSystemSettingsResponse) {
@@ -1607,3 +1804,187 @@ function enableOrDisableDatabaseFormElements(isToDisable) {
     $("#txt-login").attr("disabled", isWindowsAuth || isToDisable);
     $("#txt-password-db").attr("disabled", isWindowsAuth || isToDisable);
 }
+
+function validate_storage_type() {
+    $(".blob-error-message").hide();
+    showWaitingPopup($(".startup-page-conatiner"));
+    var storageType = $("input[name='IsBlobStorage']:checked").val();
+    window.storageType = storageType;
+    if (storageType == "1") {
+        if ($("#blob-storage-form").valid()) {
+            window.accountname = $("#txt-accountname").val();
+            window.endpoint = $("#txt-endpoint").val();
+            window.accesskey = $("#txt-accesskey").val();
+            window.containername = $("#txt-containername").val();
+            var blobUrl = $("#txt-bloburl").val();
+            var connectionType = $("input[name='Connection']:checked").val();
+            var connectionString = "";
+            var storageEndPoint = $("#txt-endpoint").val();
+
+            if (connectionType == "http" || connectionType == "https") {
+                connectionString = "DefaultEndpointsProtocol=" + connectionType + ";AccountName=" + window.accountname + ";AccountKey=" + window.accesskey;
+
+            } else {
+                connectionString = "BlobEndpoint=" + blobUrl + ";AccountName=" + window.accountname + ";AccountKey=" + window.accesskey;
+            }
+            window.connectionType = connectionType;
+            $.ajax({
+                type: "POST",
+                url: blobExist,
+                data:{ connectionString: connectionString, containerName: window.containername },
+                success:function(result) {
+                    if (typeof result.Data != "undefined") {
+                        if (result.Data.Key.toString().toLowerCase() == "true") {
+                            window.azureconnectionString = result.Data.ConnectionString;
+                            $("#system-settings-filestorage-container").hide();
+                            $("#image-parent-container .startup-image").hide().attr("src", adminSetupImageUrl).fadeIn();
+                            $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YoureAnAdmin2).slideDown();
+                            $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.AdminHaveControl).slideDown();
+                            $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+                            $("#system-settings-user-account-container").slideDown("slow");
+                            hideWaitingPopup(".startup-page-conatiner");
+                            changeFooterPostion();
+                        } else {
+                            hideWaitingPopup(".startup-page-conatiner");
+                            $(".azure-validation,.blob-error-message").css("display", "block");
+                            changeFooterPostion();
+                        }
+                    } else {
+                        hideWaitingPopup(".startup-page-conatiner");
+                        $(".azure-validation,.blob-error-message").css("display", "block");
+                        changeFooterPostion();
+                    }
+                }
+            });
+            return false;
+        } else {
+            hideWaitingPopup(".startup-page-conatiner");
+            changeFooterPostion();
+            return false;
+        }
+    } else {
+        delete window.accountname;
+        $("div.placeholder").remove();
+        hideWaitingPopup(".startup-page-conatiner");
+        $("#system-settings-filestorage-container").hide();
+        $("#image-parent-container .startup-image").hide().attr("src", adminSetupImageUrl).fadeIn();
+        $(".startup-content span.first-content").hide().text(window.TM.App.LocalizationContent.YoureAnAdmin2).slideDown();
+        $(".startup-content span.second-content").hide().text(window.TM.App.LocalizationContent.AdminHaveControl).slideDown();
+        $(".startup-content a#help-link").attr("href", isBoldBI ? "https://redirect.boldbi.com?id=6" : "https://redirect.boldbi.com?id=4022");
+        $("#system-settings-user-account-container").slideDown("slow");
+        $("body").removeClass("startup-page-container-body");
+        changeFooterPostion();
+        return false;
+    }
+}
+
+function validate_report_storage() {
+    $(".blob-error-message").hide();
+    showWaitingPopup($(".startup-page-conatiner"));
+    var storageType = $("input[name='IsBlobStorage']:checked").val();
+    window.storageType = storageType;
+    var azuredetails = "";
+    if (storageType == "1") {
+        if ($("#blob-storage-form").valid()) {
+            window.accountname = $("#txt-accountname").val();
+            window.endpoint = $("#txt-endpoint").val();
+            window.accesskey = $("#txt-accesskey").val();
+            window.containername = $("#txt-containername").val();
+            window.storageenable = $(".storage-checkbox").is(":checked");
+            
+            var blobUrl = $("#txt-bloburl").val();
+            var connectionType = $("input[name='Connection']:checked").val();
+            var connectionString = "";
+            var storageEndPoint = $("#txt-endpoint").val();
+           
+
+            if (connectionType == "http" || connectionType == "https") {
+                connectionString = "DefaultEndpointsProtocol=" + connectionType + ";AccountName=" + window.accountname + ";AccountKey=" + window.accesskey;
+
+            } else {
+                connectionString = "BlobEndpoint=" + blobUrl + ";AccountName=" + window.accountname + ";AccountKey=" + window.accesskey;
+            }
+            window.connectionType = connectionType;
+            azuredetails = {
+                AzureBlobStorageUri: window.endpoint,
+                AzureBlobStorageContainerName: window.containername,
+                ConnectionType: window.connectionType,
+                ConnectionString: connectionString,
+                AccountName: window.accountname,
+                AccessKey: window.accesskey
+            };
+            var isIntermediateDatabaseFormSubmit = $("#ds-db-config-submit").data("form") === "intermediate-db";
+            if (isIntermediateDatabaseFormSubmit) {
+                intermediateDbDetails = getDatabaseFormValues(true);
+            }
+            else {
+                systemSettingsDetails = getDatabaseFormValues();
+            }
+            if (window.storageenable == false) {
+                $.ajax({
+                    type: "POST",
+                    url: blobExist,
+                    data: { connectionString: connectionString, containerName: window.containername },
+                    success: function (result) {
+                        if (typeof result.Data != "undefined") {
+                            if (result.Data.Key.toString().toLowerCase() == "true") {
+                                postSystemSettingsData(systemSettingsDetails, azuredetails, intermediateDbDetails);
+                            } else {
+                                hideWaitingPopup(".startup-page-conatiner");
+                                $(".azure-validation,.blob-error-message").css("display", "block");
+                                changeFooterPostion();
+                            }
+                        } else {
+                            hideWaitingPopup(".startup-page-conatiner");
+                            $(".azure-validation,.blob-error-message").css("display", "block");
+                            changeFooterPostion();
+                        }
+                    }
+                });
+                return false;
+            }
+            else {
+                postSystemSettingsData(systemSettingsDetails, azuredetails, intermediateDbDetails);
+            }
+        } else {
+            hideWaitingPopup(".startup-page-conatiner");
+            changeFooterPostion();
+            return false;
+        }
+    } else {
+        var isIntermediateDatabaseFormSubmit = $("#ds-db-config-submit").data("form") === "intermediate-db";
+        if (isIntermediateDatabaseFormSubmit) {
+            intermediateDbDetails = getDatabaseFormValues(true);
+        }
+        else {
+            systemSettingsDetails = getDatabaseFormValues();
+        }
+        hideWaitingPopup(".startup-page-conatiner");
+        postSystemSettingsData(systemSettingsDetails, azuredetails, intermediateDbDetails);
+       
+    }
+}
+
+$(document).on("change", ".storage-checkbox", function () {
+    var value = $("#storage-checkbox").is(":checked");
+    if (value == true) {
+        $.ajax({
+            type: "POST",
+            url: "../TenantsManagement/GetAzureDetails",
+            dataType: 'json',
+            success: function (data) {
+                var systemSetting = JSON.parse(data.AzureDetails);
+                $("#txt-accountname").val(systemSetting.BlobStorageAccountName);
+                $("#txt-endpoint").val(systemSetting.AzureBlobStorageUri);
+                $("#txt-accesskey").val(systemSetting.BlobStorageAccessKey);
+                $("#txt-containername").val(systemSetting.AzureBlobStorageContainerName);
+            }
+        });
+    }
+    else {
+        $("#txt-accountname").val("");
+        $("#txt-endpoint").val("");
+        $("#txt-accesskey").val("");
+        $("#txt-containername").val("");
+    }
+});

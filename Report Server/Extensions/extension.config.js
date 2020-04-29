@@ -16,6 +16,12 @@ var dataExtensions = [
         name: 'WebAPI',
         imageClass: 'e-reportdesigner-datasource-webapi',
         displayName: 'WebAPI'
+    },
+    {
+        className: 'MySQLDataSource',
+        name: 'MySQL',
+        imageClass: 'e-reportdesigner-datasource-defaultextesnion',
+        displayName: 'MySQL'
     }
 ];
 var itemExtensions = [{

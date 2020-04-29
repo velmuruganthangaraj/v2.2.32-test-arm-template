@@ -108,6 +108,10 @@ html {
                                 padding-right: 18px;
                             }
 
+                            .select-storage {
+                                padding-right: 18px;
+                            }
+
                             .administrator {
                                 width: 82px;
                             }
@@ -278,7 +282,7 @@ html {
                                         @extend %text-overflow-ellipsis;
                                     }
 
-                                    .site-url,.site-name{
+                                    .site-url, .site-name {
                                         padding-top: 24px !important;
                                     }
 
@@ -350,6 +354,60 @@ html {
 
                                     #messageBox {
                                         display: none;
+                                    }
+                                }
+
+                                .storage-form {
+                                    #system-settings-filestorage-container {
+                                        box-shadow: none;
+                                        padding: 0;
+                                        width: 400px !important;
+
+                                        .content {
+                                            padding-top: 200px !important;
+                                            text-align: center;
+                                            margin-bottom: 14px;
+                                            margin-top: 70px;
+                                            position: absolute;
+                                            margin-right: 20px;
+                                        }
+
+                                        .form-div {
+                                            margin: 0px !important;
+                                            padding-bottom: 24px;
+                                            position: relative;
+                                        }
+
+                                        .storage-checkbox.file-storage-button {
+                                            display: none;
+                                        }
+
+
+                                        .database-types {
+                                            padding-top: 15px;
+                                            position: relative;
+
+                                            .file-storage-align, .blob-storage-align {
+                                                display: inline-block;
+                                                margin-left: 70px;
+                                                margin-bottom: 1px;
+                                            }
+                                        }
+
+                                        .secure-sql {
+                                            margin-top: 24px;
+                                            margin-bottom: 24px;
+
+                                            &.material-checkbox label {
+                                                &::before {
+                                                    top: 2px;
+                                                }
+
+                                                &::after {
+                                                    top: 5px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
 
@@ -480,7 +538,7 @@ html {
                             }
 
                             .grid-alignment {
-                                padding: 0px 5px 20px 5px !important;
+                                padding: 6px 5px 20px 5px !important;
                                 overflow: hidden !important;
                             }
                         }
@@ -535,164 +593,165 @@ html {
     }
 }
 
-#add_admins_grid_stringDlg_wrapper {
-    .e-scroller {
-        overflow-y: auto;
-    }
-}
-
-#add_admins_grid_stringDlg {
-    display: none;
-}
-
-.display-none {
-    display: none;
-}
-
-.no-padding {
-    padding: 0 !important;
-}
-//style for Search box
-#search-area {
-    padding: 21px 30px 20px 24px;
-    float: left;
-    width: 100%;
-
-    input[type="text"] {
-        padding: 3px 8px;
-        width: 360px;
-        height: 24px;
-        border: none;
-        border-radius: 4px;
-        background-color: $grey-300;
-        @extend %text-style-decoration;
-        line-height: 1.5;
-        letter-spacing: 0.3px;
-
-        &:focus {
-            border: none;
+    #add_admins_grid_stringDlg_wrapper {
+        .e-scroller {
+            overflow-y: auto;
         }
     }
 
-    .su-search {
-        width: 12px;
-        height: 12px;
-        position: absolute;
-        margin-left: -20px;
-        margin-top: 6px;
-        font-size: 12px;
-        color: $grey-700;
-        border:0 !important;
+    #add_admins_grid_stringDlg {
+        display: none;
     }
 
-    .su-search-alignment {
-        margin-left: 338px;
+    .display-none {
+        display: none;
     }
 
-    .close-icon {
-        font-size: map-get($app-text-size, sm);
-        width: 12px;
-        height: 12px;
-        position: absolute;
-        margin-left: 338px;
-        margin-top: 6px;
-        border: 0 !important;
+    .no-padding {
+        padding: 0 !important;
     }
-
-    .search-bar {
-        width: 360px;
-        height: 24px;
+    //style for Search box
+    #search-area {
+        padding: 21px 30px 20px 24px;
         float: left;
-        margin-right: 24px;
-    }
+        width: 100%;
 
-    .sort {
-        margin-top: 3px;
-        float: right;
-    }
+        input[type="text"] {
+            padding: 3px 8px;
+            width: 360px;
+            height: 24px;
+            border: none;
+            border-radius: 4px;
+            background-color: $grey-300;
+            @extend %text-style-decoration;
+            line-height: 1.5;
+            letter-spacing: 0.3px;
 
-    .su-sort {
-        color: $grey-700;
-        width: 15px;
-        height: 15px;
-        font-size: 17px;
-    }
-}
-
-.close-icon.su-inner-close {
-    display: none;
-}
-
-//placeholder color for grid
-::-webkit-input-placeholder {
-    color: $grey-700;
-}
-
-::-moz-placeholder {
-    color: $grey-700;
-}
-
-.placeholder {
-    color: $grey-700;
-}
-@media screen and (min-width: 0px) {
-    html {
-        body {
-
-            .selector-content {
-                font-size: map-get($app-text-size, "xs");
-            }
-
-            .header-description {
-                font-size: map-get($app-text-size, "md");
-            }
-
-            #header-title {
-                font-size: map-get($app-text-size, "lg");
+            &:focus {
+                border: none;
             }
         }
+
+        .su-search {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            margin-left: -20px;
+            margin-top: 6px;
+            font-size: 12px;
+            color: $grey-700;
+            border: 0 !important;
+        }
+
+        .su-search-alignment {
+            margin-left: 338px;
+        }
+
+        .close-icon {
+            font-size: map-get($app-text-size, sm);
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            margin-left: 338px;
+            margin-top: 6px;
+            border: 0 !important;
+        }
+
+        .search-bar {
+            width: 360px;
+            height: 24px;
+            float: left;
+            margin-right: 24px;
+        }
+
+        .sort {
+            margin-top: 3px;
+            float: right;
+        }
+
+        .su-sort {
+            color: $grey-700;
+            width: 15px;
+            height: 15px;
+            font-size: 17px;
+        }
     }
-}
-@media screen and (min-width: 1400px) {
-    html {
-        body {
-            .selector-icons {
-                margin-left: 120px !important;
-            }
 
-            .selector-panel {
-                width: 125px !important;
+    .close-icon.su-inner-close {
+        display: none;
+    }
+    //placeholder color for grid
+    ::-webkit-input-placeholder {
+        color: $grey-700;
+    }
 
-                .hr-tag {
-                    width: 110px !important;
+    ::-moz-placeholder {
+        color: $grey-700;
+    }
+
+    .placeholder {
+        color: $grey-700;
+    }
+
+    @media screen and (min-width: 0px) {
+        html {
+            body {
+
+                .selector-content {
+                    font-size: map-get($app-text-size, "xs");
+                }
+
+                .header-description {
+                    font-size: map-get($app-text-size, "md");
+                }
+
+                #header-title {
+                    font-size: map-get($app-text-size, "lg");
                 }
             }
+        }
+    }
 
-            .icon-alignment {
-                margin-left: 265px !important;
-            }
+    @media screen and (min-width: 1400px) {
+        html {
+            body {
+                .selector-icons {
+                    margin-left: 120px !important;
+                }
 
-            .selector-content {
-                font-size: map-get($app-text-size, "xs")+2;
-                margin-left: 85px !important;
-            }
+                .selector-panel {
+                    width: 125px !important;
 
-            .content-alignment {
-                margin-left: 230px !important;
-            }
+                    .hr-tag {
+                        width: 110px !important;
+                    }
+                }
 
-            .header-description {
-                font-size: map-get($app-text-size, "md")+2;
-            }
+                .icon-alignment {
+                    margin-left: 265px !important;
+                }
 
-            #header-title {
-                font-size: map-get($app-text-size, "lg")+2;
+                .selector-content {
+                    font-size: map-get($app-text-size, "xs")+2;
+                    margin-left: 85px !important;
+                }
+
+                .content-alignment {
+                    margin-left: 230px !important;
+                }
+
+                .header-description {
+                    font-size: map-get($app-text-size, "md")+2;
+                }
+
+                #header-title {
+                    font-size: map-get($app-text-size, "lg")+2;
+                }
             }
         }
     }
-}
 
-.bootstrap-select.btn-group > .disabled
-{
-    cursor: default;
-}
+    .bootstrap-select.btn-group > .disabled {
+        cursor: default;
+    }
+    

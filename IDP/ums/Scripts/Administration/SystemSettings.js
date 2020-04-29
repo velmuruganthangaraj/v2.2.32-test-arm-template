@@ -15,7 +15,9 @@ $(document).ready(function () {
     }
     $("#mail-password").show();
     $(".input-group-addon .btn.selectpicker").css("height", window.innerWidth <= 1366 ? "28" : "32");
+    
     $("#upload-login-image").ejUploadbox({
+
         saveUrl: window.fileUploadUrl + "?imageType=loginlogo&&timeStamp=" + currentDate,
         autoUpload: true,
         showFileDetails: false,
@@ -38,15 +40,16 @@ $(document).ready(function () {
         },
         complete: function () {
             window.SystemSettingsProperties.LoginLogo = "login_logo_" + currentDate + ".png";
-            var imageUrl = window.baseRootUrl + "/Content/images/application/" + "login_logo_" + currentDate + ".png?v=" + $.now();
+            var imageUrl = window.baseRootUrl + "/content/images/application/" + "login_logo_" + currentDate + ".png?v=" + $.now();
             $("#display-login-logo").attr("src", imageUrl);
             $("#upload-login-image-textbox").removeClass("ValidationErrorImage").val(loginFileName);
             $("#upload-login-image-textbox").closest("div").removeClass("has-error");
             $("#upload-login-image-textbox").parent().find(".e-box").removeClass("upload-error-border");
             ShowWaitingProgress("#content-area", "hide");
         }
+        
     });
-
+    
     $("#upload-Main-screen-image").ejUploadbox({
         saveUrl: window.fileUploadUrl + "?imageType=mainlogo&&timeStamp=" + currentDate,
         autoUpload: true,
@@ -70,7 +73,7 @@ $(document).ready(function () {
         },
         complete: function () {
             window.SystemSettingsProperties.MainScreenLogo = "main_logo_" + currentDate + ".png";
-            var imageUrl = window.baseRootUrl + "/Content/images/application/" + "main_logo_" + currentDate + ".png?v=" + $.now();
+            var imageUrl = window.baseRootUrl + "/Content/Images/Application/" + "main_logo_" + currentDate + ".png?v=" + $.now();
             $("#mainscreen_logo_img").attr("src", imageUrl);
             $("#upload-main-screen-image-textbox").removeClass("ValidationErrorImage").val(mainFileName);
             $("#upload-main-screen-image-textbox").closest("div").removeClass("has-error");
@@ -102,7 +105,7 @@ $(document).ready(function () {
         },
         complete: function () {
             window.SystemSettingsProperties.FavIcon = "favicon_" + currentDate + ".png";
-            var imageUrl = window.baseRootUrl + "/Content/images/application/" + "favicon_" + currentDate + ".png?v=" + $.now();
+            var imageUrl = window.baseRootUrl + "/Content/Images/Application/" + "favicon_" + currentDate + ".png?v=" + $.now();
             $("#favicon_logo_img").attr("src", imageUrl);
             $("#upload-favicon-image-textbox").removeClass("ValidationErrorImage").val(favName);
             $("#upload-favicon-image-textbox").closest("div").removeClass("has-error");
@@ -214,11 +217,11 @@ $(document).ready(function () {
                         window.location.href = $("#enable-ssl").val() + "://" + location.host + location.pathname;
                     }
                 } else {
-                    $("#application-logo").attr("src", window.baseRootUrl + "/Content/images/application/" + systemSettingsData.MainScreenLogo);
+                    $("#application-logo").attr("src", window.baseRootUrl + "/content/images/application/" + systemSettingsData.MainScreenLogo);
                     var link = document.createElement("link");
                     link.type = "image/x-icon";
                     link.rel = "shortcut icon";
-                    link.href = window.baseRootUrl + "/Content/images/application/" + systemSettingsData.FavIcon;
+                    link.href = window.baseRootUrl + "/content/images/application/" + systemSettingsData.FavIcon;
                     document.getElementsByTagName("head")[0].appendChild(link);
                     var pageTitle = $("#site-orgname").val() + " | " + document.title.split("-")[1];
                     document.title = pageTitle;

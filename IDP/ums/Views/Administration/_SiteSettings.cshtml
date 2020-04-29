@@ -213,7 +213,14 @@ new SelectListItem
                                         <span title="[[[Log in screen]]]" data-toggle="tooltip" data-animation="true" class="tooltip-container" data-image="login-screen">
                                             @if (GlobalAppSettings.SystemSettings.StorageType == (int)StorageType.AzureBlob)
                                             {
-                                                <img id="display-login-logo" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode()/Content/images/@GlobalAppSettings.Branding/application/@ViewBag.SystemSettings.LoginLogo" width="200" height="44" alt="[[[Login Logo]]]" />
+                                                if (CloudAppConfig.IsSelfHosted)
+                                                {
+                                                    <img id="display-login-logo" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode()/content/images/application/@ViewBag.SystemSettings.LoginLogo" width="200" height="44" alt="[[[Login Logo]]]" />
+                                                }
+                                                else
+                                                {
+                                                    <img id="display-login-logo" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode()/Content/images/@GlobalAppSettings.Branding/application/@ViewBag.SystemSettings.LoginLogo" width="200" height="44" alt="[[[Login Logo]]]" />
+                                                }
                                             }
                                             else
                                             {
@@ -232,7 +239,14 @@ new SelectListItem
                                         <span class="app-img-container header-icon tooltip-container" title="[[[Header Logo]]]" data-toggle="tooltip" data-animation="true" data-image="header-logo">
                                             @if (GlobalAppSettings.SystemSettings.StorageType == (int)StorageType.AzureBlob)
                                             {
-                                                <img id="mainscreen_logo_img" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode()/Content/images/@GlobalAppSettings.Branding/application/@ViewBag.SystemSettings.MainScreenLogo" width="40" height="40" alt="[[[Main Screen Logo]]]" />
+                                                if (CloudAppConfig.IsSelfHosted)
+                                                {
+                                                    <img id="mainscreen_logo_img" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode().ToLower()/content/images/application/@ViewBag.SystemSettings.MainScreenLogo" width="40" height="40" alt="[[[Main Screen Logo]]]" />
+                                                }
+                                                else
+                                                {
+                                                    <img id="mainscreen_logo_img" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode()/Content/images/@GlobalAppSettings.Branding/application/@ViewBag.SystemSettings.MainScreenLogo" width="40" height="40" alt="[[[Main Screen Logo]]]" />
+                                                }
                                             }
                                             else
                                             {
@@ -244,7 +258,14 @@ new SelectListItem
                                         <span class="app-img-container favicon tooltip-container" title="[[[Favicon]]]" data-toggle="tooltip" data-animation="true" data-image="favicon">
                                             @if (GlobalAppSettings.SystemSettings.StorageType == (int)StorageType.AzureBlob)
                                             {
-                                                <img id="favicon_logo_img" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode()/Content/images/@GlobalAppSettings.Branding/application/@ViewBag.SystemSettings.FavIcon" width="16" height="16" alt="[[[Favicon]]]" />
+                                                if (CloudAppConfig.IsSelfHosted)
+                                                {
+                                                    <img id="favicon_logo_img" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode().ToLower()/content/images/application/@ViewBag.SystemSettings.FavIcon" width="16" height="16" alt="[[[Favicon]]]"  />
+                                                }
+                                                else
+                                                {
+                                                    <img id="favicon_logo_img" src="@GlobalAppSettings.AzureBlob.AzureBlobStorageUri/@GlobalAppSettings.AzureBlob.AzureBlobStorageContainerName/@GlobalAppSettings.GetStorageMode()/Content/images/@GlobalAppSettings.Branding/application/@ViewBag.SystemSettings.FavIcon" width="16" height="16" alt="[[[Favicon]]]" />
+                                                }
                                             }
                                             else
                                             {

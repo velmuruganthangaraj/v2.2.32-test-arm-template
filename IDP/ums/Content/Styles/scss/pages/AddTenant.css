@@ -129,6 +129,8 @@ html {
                 padding-right: 18px; }
               html body .add-tenant-dialog-wrapper #popup-container .modal-header .selector .selector-content .select-intermediate-database {
                 padding-right: 18px; }
+              html body .add-tenant-dialog-wrapper #popup-container .modal-header .selector .selector-content .select-storage {
+                padding-right: 18px; }
               html body .add-tenant-dialog-wrapper #popup-container .modal-header .selector .selector-content .administrator {
                 width: 82px; }
             html body .add-tenant-dialog-wrapper #popup-container .modal-header .selector .selectedClass {
@@ -275,6 +277,37 @@ html {
                     display: none; }
                 html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .tenant-database-form #messageBox, html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .tenant-intermediate-database-form #messageBox {
                   display: none; }
+                html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container {
+                  box-shadow: none;
+                  padding: 0;
+                  width: 400px !important; }
+                  html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .content {
+                    padding-top: 200px !important;
+                    text-align: center;
+                    margin-bottom: 14px;
+                    margin-top: 70px;
+                    position: absolute;
+                    margin-right: 20px; }
+                  html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .form-div {
+                    margin: 0px !important;
+                    padding-bottom: 24px;
+                    position: relative; }
+                  html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .storage-checkbox.file-storage-button {
+                    display: none; }
+                  html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .database-types {
+                    padding-top: 15px;
+                    position: relative; }
+                    html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .database-types .file-storage-align, html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .database-types .blob-storage-align {
+                      display: inline-block;
+                      margin-left: 70px;
+                      margin-bottom: 1px; }
+                  html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .secure-sql {
+                    margin-top: 24px;
+                    margin-bottom: 24px; }
+                    html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .secure-sql.material-checkbox label::before {
+                      top: 2px; }
+                    html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .storage-form #system-settings-filestorage-container .secure-sql.material-checkbox label::after {
+                      top: 5px; }
                 html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .tenant-user-form {
                   width: 454px;
                   border: none;
@@ -401,7 +434,7 @@ html {
                         html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .tenant-user-form #add_admins_grid .e-scrollbar.e-vscrollbar .e-vscroll .e-icon {
                           position: relative; }
               html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div .grid-alignment {
-                padding: 0px 5px 20px 5px !important;
+                padding: 6px 5px 20px 5px !important;
                 overflow: hidden !important; }
         html body .add-tenant-dialog-wrapper #popup-container .adjustment {
           overflow-y: auto; }

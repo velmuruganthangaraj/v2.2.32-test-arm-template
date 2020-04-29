@@ -35,10 +35,14 @@
         var generateSQLTablesUrl = "@Url.Action("GenerateTablesInDB", "ServerConfiguration")";
         var checkTableExistsUrl = "@Url.Action("CheckTableAlreadyExists", "ServerConfiguration")";
         var storageType = "@ViewBag.StorageType";
+        var blobDetails = "@Url.Action("GetAzureDetails", "TenantsManagement")";
         var blobExist = "@Url.Action("IsBlobExists", "ServerConfiguration")";
         var serverSetupImageUrl = "@Url.Content(HttpRuntime.AppDomainAppVirtualPath + "/Content/images/" + GlobalAppSettings.Branding + "/application/server-startup-image.svg")";
         var adminSetupImageUrl = "@Url.Content(HttpRuntime.AppDomainAppVirtualPath + "/Content/images/" + GlobalAppSettings.Branding + "/application/server-admin-setup.svg")";
+        var storageUrl = "@Url.Content(HttpRuntime.AppDomainAppVirtualPath + "/Content/images/" + GlobalAppSettings.Branding + "/application/file-storage-image.svg")";
         var isBoldBI = "@(GlobalAppSettings.BrandingDisplayName == AppBranding.BoldBI.DisplayName)".toLowerCase() == "true";
+        var isAzureApplication = ("@ViewBag.IsAzureApplication".toLowerCase() === "true");
+        var selfHosted = ("@ViewBag.selfHosted".toLowerCase() === "true");
         $(function () {
             // Declare a proxy to reference the hub.
             var statusTracker = $.connection.progressHub;
@@ -193,6 +197,7 @@
                         </div>
                     </div>
                 </div>
+                @Html.Partial("_FileStorage")
                 @Html.Partial("_UserAccount")
                 <div id="messageBox">
                     <div class="message-header"></div>

@@ -7,14 +7,15 @@ var isFirstRequest = false;
 var waitingPopUpElement = "";
 var tenantNameinDB = "";
 var gridHeight = 355;
-var databaseFormData, intermediateFormData, clonedDBFormData;
+var databaseFormData, intermediateFormData, clonedDBFormData, azuredetails;
+var storageFlag = 0;
 
 $(document).ready(function () {
     waitingPopUpElement = parent.$("#add-tenant-popup");
     if (actionType.toLowerCase() == "edit") {
         $("#total-step").html("").html(" 2");
         $(".add-tenant-popup-title label").html("Edit site");
-        $(".administrator, .select-intermediate-database, #selection-intermediate-db, #selectionadmin, #selectiondb .hr-tag, #selection-intermediate-db .hr-tag").css("display", "none");
+        $(".administrator, .select-intermediate-database, #selection-intermediate-db, #selection-storage, .select-storage, #selectionadmin, #selectiondb .hr-tag, #selection-intermediate-db .hr-tag").css("display", "none");
         $(".selector-icons").addClass("icon-alignment");
         $(".selector-content").addClass("content-alignment");
         getTenant(tenantId);
@@ -226,45 +227,52 @@ $(document).ready(function () {
                     newDbConfiguration(waitingPopUpElement);
                 }
                 if (!$(".database-error").is(":visible")) {
-                    saveDatabaseValuesTemporarly();
                     preserveFormData();
-                    $("#header-title").html(window.TM.App.LocalizationContent.ConfigureDataStore);
-                    $("#header-description").html(window.TM.App.LocalizationContent.PullYourData + " " + dataConnectorsCount + "+ " + window.TM.App.LocalizationContent.DataConnectorsSaveOffline);
-                    moveStepper("front", 3);
-                    $(this).attr("data-form", "intermediate-db");
-                    if (actionType.toLowerCase() == "edit") {
-                        $(this).attr("value", "Update");
-                        $(this).removeClass("intermediate-db").addClass("update");
-                    } else {
-                        $(this).attr("value", "Next");
-                        $(this).removeClass("intermediate-db").addClass("user");
-                    }
 
-                    $(this).removeAttr("disabled").addClass("next-alignment");
-                    $(".tenant-database-form").addClass("tenant-intermediate-database-form").removeClass("tenant-database-form");
-                    $(".skip-intermediate-db-container").show();
+                    var dropdownValue = $("#tenant-type").val();
+                    if (dropdownValue === "BoldBIOnPremise") {
+                        saveDatabaseValuesTemporarly();
+                        $("#header-title").html(window.TM.App.LocalizationContent.ConfigureDataStore);
+                        $("#header-description").html(window.TM.App.LocalizationContent.PullYourData + " " + dataConnectorsCount + "+ " + window.TM.App.LocalizationContent.DataConnectorsSaveOffline);
+                        moveStepper("front", 3);
+                        $(this).attr("data-form", "intermediate-db");
+                        if (actionType.toLowerCase() == "edit") {
+                            $(this).attr("value", "Update");
+                            $(this).removeClass("intermediate-db").addClass("update");
+                        } else {
+                            $(this).attr("value", "Next");
+                            $(this).removeClass("intermediate-db").addClass("user");
+                        }
 
-                    if (intermediateFormData != undefined) {
-                        fillPreservedFormData(intermediateFormData);
-                    }
-					else if (databaseFormData != undefined) {
-                        $("#skip-intermediate-db").trigger("click");
-                        fillPreservedFormData(clonedDBFormData);
-                        $("#txt-login, #txt-password-db, #new-db, #existing-db, #secure-sql-connection").attr("disabled", true);
-                        $("#database-name").val("");
-                        $("#database-name").attr("disabled", true).selectpicker("refresh");
+                        $(this).removeAttr("disabled").addClass("next-alignment");
+                        $(".tenant-database-form").addClass("tenant-intermediate-database-form").removeClass("tenant-database-form");
+                        $(".skip-intermediate-db-container").show();
+
+                        if (intermediateFormData != undefined) {
+                            fillPreservedFormData(intermediateFormData);
+                        }
+                        else if (databaseFormData != undefined) {
+                            $("#skip-intermediate-db").trigger("click");
+                            fillPreservedFormData(clonedDBFormData);
+                            $("#txt-login, #txt-password-db, #new-db, #existing-db, #secure-sql-connection").attr("disabled", true);
+                            $("#database-name").val("");
+                            $("#database-name").attr("disabled", true).selectpicker("refresh");
+                        }
+                        else {
+                            $("#skip-intermediate-db").trigger("click");
+                        }
+
+                        if (item === "dashboards") {
+                            $("#no-need-datastore").css("display", "none");
+                            $(".skip-intermediate-db-container").css("display", "block");
+                        }
+                        else {
+                            $("#no-need-datastore").css({ "display": "block", "margin-top": "24px" });
+                            $(".skip-intermediate-db-container").css("display", "none");
+                        }
                     }
                     else {
-                        $("#skip-intermediate-db").trigger("click");
-                    }
-
-                    if (item === "dashboards") {
-                        $("#no-need-datastore").css("display", "none");
-                        $(".skip-intermediate-db-container").css("display", "block");
-                    }
-                    else {
-                        $("#no-need-datastore").css({ "display": "block", "margin-top": "24px" });
-                        $(".skip-intermediate-db-container").css("display", "none");
+                        nextToStoragePage();
                     }
                 }
                 $('#details-next').removeAttr("disabled");
@@ -273,7 +281,7 @@ $(document).ready(function () {
                 $(this).removeAttr("disabled");
             }
         }
-        else if ($(".tenant-user-form").hasClass("hide") && $(this).hasClass("user") && $(".tenant-database-form").find(".has-error").length == 0) {
+        else if ($(".tenant-user-form").hasClass("hide") && $(this).hasClass("user") && $(".tenant-database-form").find(".has-error").length == 0 && $(".tenant-intermediate-database-form").hasClass("show")) {
             if (!($("#skip-intermediate-db").is(":visible") && $("#skip-intermediate-db").is(":checked")) && item === "dashboards" && $(".tenant-intermediate-database-form #db-content-holder").valid()) {
                 if ($("input[name='databaseType']:checked").val() === "1") {
                     existingDbConfiguration(waitingPopUpElement);
@@ -292,12 +300,33 @@ $(document).ready(function () {
                     $(".tenant-intermediate-database-form #system-settings-db-selection-container").hide();
                     moveStepper("front", 4);
                     nextToUserPage();
-                } else {
+                } 
+                else {
                     $(this).removeAttr("disabled");
                 }
             }
             $(this).removeAttr("disabled");
         }
+
+        else if (($(".tenant-user-form").hasClass("hide") && $(this).hasClass("user")) && $(".storage-form").find(".has-error").length == 0) {
+            saveDatabaseValuesTemporarly();
+            preserveStorageFormData();
+            if ($("#blob-storage-form").valid()) {
+                showWaitingPopup(waitingPopUpElement);
+                $("#header-title").show();
+                $("#header-description").show();
+                $("#details-back").show().removeClass("back-button");
+                $("#header-title").html(window.TM.App.LocalizationContent.SelectSiteAdmin);
+                $("#header-description").text(window.TM.App.LocalizationContent.AdminControlSite);
+                $(".storage-form #system-settings-filestorage-container").hide();
+                moveStepper("front", 4);
+                nextToUserPage();
+            }
+            else {
+                $(this).removeAttr("disabled");
+            }
+        }
+
         else if ($(".tenant-user-form").hasClass("hide") && $(this).hasClass("update") && $(".tenant-database-form").find(".has-error").length == 0) {
             var proceed = $("#db-content-holder").valid();
             if (proceed) {
@@ -333,6 +362,7 @@ $(document).ready(function () {
             $("#details-back").hide().addClass("back-button");
             $(".tenant-registration-form, #step-1").removeClass("hide").addClass("show");
             $("#dialog-header").css("display", "none");
+            $("#header-title").show();
             $("#header-title").html(window.TM.App.LocalizationContent.SiteCreation);
             if (item === "dashboards") {
                 $("#header-description").html(window.TM.App.LocalizationContent.BoldBiMultiTenancy);
@@ -340,7 +370,7 @@ $(document).ready(function () {
             else {
                 $("#header-description").html(window.TM.App.LocalizationContent.BoldReportsMultiTenancy);
             }
-            
+
             $("#details-next").removeClass("user update").addClass("database");
             moveStepper("back", 1);
             $("#header-logo").css("display", "inline-block");
@@ -350,6 +380,7 @@ $(document).ready(function () {
             $("#details-next").attr("value", window.TM.App.LocalizationContent.NextButton);
             $(".tenant-registration-form, #step-1").removeClass("show").addClass("hide");
             $(".tenant-user-form, #step-3").removeClass("show").addClass("hide");
+            $(".storage-form, #step-2").removeClass("show").addClass("hide");
             $("#details-back").show().removeClass("back-button");
             $(".tenant-database-form, #step-2").removeClass("hide").addClass("show");
             $("#dialog-body-container").removeClass("grid-alignment");
@@ -366,10 +397,12 @@ $(document).ready(function () {
             $("#details-next").removeClass("user").addClass("intermediate-db");
             $("#no-need-datastore").css("display", "none");
             moveStepper("back", 2);
+            $("#header-title").show();
             $("#header-title").html(window.TM.App.LocalizationContent.SelectDatabaseTitle);
             $("#header-description").text(window.TM.App.LocalizationContent.PlaceToCreateShare + " " + window.TM.App.LocalizationContent.DashboardsDot).show();
             $("#search-area").hide();
             $(".skip-intermediate-db-container").hide();
+            $(".storage-form #system-settings-filestorage-container").hide();
             $(".tenant-intermediate-database-form").addClass("tenant-database-form").removeClass("tenant-intermediate-database-form");
             preserveFormData(true);
             enableOrDisableDatabaseFormElements(false);
@@ -378,32 +411,46 @@ $(document).ready(function () {
         else {
             moveStepper("back", 3);
             $("#details-back").show().addClass("back-button");
-            $("#header-title").html(window.TM.App.LocalizationContent.ConfigureDataStore);
-            $("#header-description").html(window.TM.App.LocalizationContent.PullYourData + " " + dataConnectorsCount + "+ " + window.TM.App.LocalizationContent.DataConnectorsSaveOffline);
             $("#search-area").hide();
 
-            if ($("#database-type").val().toLowerCase() === "postgresql") {
-                $('#auth-type-dropdown').removeClass("show").addClass("hide");
-            }
-            else {
-                $('#auth-type-dropdown').removeClass("hide").addClass("show");
-            }
 
-            if (item === "dashboards") {
-                $("#no-need-datastore").css("display", "none");
-                $(".skip-intermediate-db-container").css("display", "block");
-            }
-            else {
+            var dropdownValue = $("#tenant-type").val();
+            if (dropdownValue === "BoldBIOnPremise") {
+               if ($("#database-type").val().toLowerCase() === "postgresql") {
+                   $('#auth-type-dropdown').removeClass("show").addClass("hide");
+               }
+               else {
+                   $('#auth-type-dropdown').removeClass("hide").addClass("show");
+               }
+
+               if (item === "dashboards") {
+                   $("#no-need-datastore").css("display", "none");
+                   $(".skip-intermediate-db-container").css("display", "block");
+               }
+               else {
                 $("#no-need-datastore").css({ "display": "block", "margin-top": "24px" });
                 $(".skip-intermediate-db-container").css("display", "none");
+               }
+
+                $("#header-title").html(window.TM.App.LocalizationContent.ConfigureDataStore);
+                $("#header-description").html(window.TM.App.LocalizationContent.PullYourData + " " + dataConnectorsCount + "+ " + window.TM.App.LocalizationContent.DataConnectorsSaveOffline);
+                $(".tenant-intermediate-database-form #system-settings-db-selection-container").show();
+                $(".tenant-intermediate-database-form").removeClass("hide").addClass("show");
+                $(".tenant-user-form, #step-3").removeClass("show").addClass("hide");
+                $("#details-next").attr("value", window.TM.App.LocalizationContent.NextButton);
+                $("#details-next").removeClass("submit").addClass("user").removeAttr("disabled");
+                $("#dialog-body-container").addClass("grid-alignment");
             }
-            
-            $(".tenant-intermediate-database-form #system-settings-db-selection-container").show();
-            $(".tenant-intermediate-database-form").removeClass("hide").addClass("show");
-            $(".tenant-user-form, #step-3").removeClass("show").addClass("hide");
-            $("#details-next").attr("value", window.TM.App.LocalizationContent.NextButton);
-            $("#details-next").removeClass("submit").addClass("user").removeAttr("disabled");
-            $("#dialog-body-container").addClass("grid-alignment");
+            else {
+                $("#header-title").hide();
+                $("#header-description").hide();
+                $(".tenant-user-form, #step-3").removeClass("show").addClass("hide");
+                $(".storage-form #system-settings-filestorage-container").show();
+                $(".storage-form, #step-2").removeClass("hide").addClass("show");
+                $("#details-next").attr("value", window.TM.App.LocalizationContent.NextButton);
+                $("#details-next").removeClass("submit").addClass("user").removeAttr("disabled");
+                $("#dialog-body-container").removeClass("grid-alignment");
+            }
         }
         Resize();
         ResizeHeightForDOM();
@@ -416,7 +463,6 @@ $(document).ready(function () {
 
         parent.$("#add-tenant-popup").ejDialog("close");
     });
-
     ResizeHeightForDOM();
 });
 function listUsersForAdminSelection() {
@@ -666,11 +712,11 @@ function addTenant() {
         DNS: $("#tenant-url").val()
     };
 
-    postSystemSettingsData(systemSettingsDetails, intermediateDbDetails, selectedAdmins, tenantInfo, true);
+    postSystemSettingsData(systemSettingsDetails, azuredetails, intermediateDbDetails, selectedAdmins, tenantInfo, true);
 }
 
 function nextToUserPage() {
-    if ($(".tenant-intermediate-database-form").find(".has-error").length == 0 || $("#skip-intermediate-db").is(":checked")) {
+    if ($(".tenant-intermediate-database-form").find(".has-error").length == 0 || $("#skip-intermediate-db").is(":checked") || $(".storage-form").find(".has-error").length == 0) {
         $(".tenant-intermediate-database-form, #step-2").removeClass("show").addClass("hide");
         $(".tenant-registration-form, #step-1").removeClass("show").addClass("hide");
         $("#stepper #current-step").text("3");
@@ -771,6 +817,14 @@ function getTenant(id) {
                     $('#db-config-submit,#sql-existing-db-submit').addClass("hide");
                     $(".sqlce-content").removeClass("hide").addClass("show");
                 }
+
+            }
+            if (data.AzureDetails != "" || data.AzureDetails != null || data.AzureDetails != undefined) {
+                var systemSetting = JSON.parse(data.AzureDetails);
+                $("#txt-accountname").val(systemSetting.BlobStorageAccountName);
+                $("#txt-endpoint").val(systemSetting.AzureBlobStorageUri);
+                $("#txt-accesskey").val(systemSetting.BlobStorageAccessKey);
+                $("#txt-containername").val(systemSetting.AzureBlobStorageContainerName);
             }
 
         }
@@ -805,7 +859,7 @@ function updateTenant(waitingPopUpElement, connectionString) {
 }
 
 function Resize() {
-    if ($(".tenant-database-form, .tenant-intermediate-database-form").hasClass("show")) {
+    if ($(".tenant-database-form, .tenant-intermediate-database-form, .storage-form").hasClass("show")) {
         var height = $(window).height() - $(".modal-header").height() - 63;
         $(".modal-tenant-body").addClass("adjustment");
         $(".adjustment").css("height", height);
@@ -835,6 +889,11 @@ function ResizeHeightForDOM() {
     var modalheight = $("#dialog-body-container").height() + $("#dialog-body-header").height() + 50;
     if ($(".tenant-registration-form").hasClass("show")) {
         height = $(window).height() - $(".modal-header").height() - 210 + 100;
+        modalheight = $("#dialog-body-container").height() + $("#dialog-body-header").height() + 102;
+    }
+
+    if ($(".storage-form").hasClass("show")) {
+        height = $(window).height() - $(".modal-header").height() - 210 + 250;
         modalheight = $("#dialog-body-container").height() + $("#dialog-body-header").height() + 102;
     }
 
@@ -1039,4 +1098,63 @@ function nextToDatabasePage() {
 
     $("#details-next").removeAttr("disabled").addClass("next-alignment");
 }
+
+function nextToStoragePage() {
+    $("#header-title").hide();
+    $("#header-description").hide();
+    moveStepper("front", 3);
+    if (storageFlag == 0) {
+        $(".storage-checkbox").hide("slow");
+    }
+    else {
+        $(".storage-checkbox").show("slow");
+        storageFlag ++;
+    }
+    $(".tenant-registration-form, #step-1").removeClass("show").addClass("hide");
+    $(".tenant-user-form, #step-3").removeClass("show").addClass("hide");
+    $(".tenant-database-form, #step-2").removeClass("show").addClass("hide");
+    $(".custom-endpoint-form-element, .file-storage-button").hide();
+    
+    $(".storage-form, #step-2").removeClass("hide").addClass("show");
+    $(".storage-form #system-settings-filestorage-container").show();
+    $(".storage-form #blob-storage-form").addClass("site-creation");
+    $("#dialog-body-container").removeClass("grid-alignment");
+    $("#details-next").attr("value", "Next");
+    $("#details-next").removeClass("intermediate-db").addClass("user");
+    $("#details-next").removeAttr("disabled").addClass("next-alignment");
+}
+
+function preserveStorageFormData() {
+    var storageType = $("input[name='IsBlobStorage']:checked").val();
+    window.accountname = $("#txt-accountname").val();
+    window.endpoint = $("#txt-endpoint").val();
+    window.accesskey = $("#txt-accesskey").val();
+    window.containername = $("#txt-containername").val();
+    window.storageenable = $(".storage-checkbox").is(":checked");
+    var blobUrl = $("#txt-bloburl").val();
+    var connectionType = $("input[name='Connection']:checked").val();
+    var connectionString = "";
+
+    if (connectionType == "http" || connectionType == "https") {
+        connectionString = "DefaultEndpointsProtocol=" + connectionType + ";AccountName=" + window.accountname + ";AccountKey=" + window.accesskey;
+
+    } else {
+        connectionString = "BlobEndpoint=" + blobUrl + ";AccountName=" + window.accountname + ";AccountKey=" + window.accesskey;
+    }
+    if (storageType == "1") {
+        azuredetails = {
+            AzureBlobStorageUri: window.endpoint,
+            AzureBlobStorageContainerName: window.containername,
+            ConnectionType: connectionType,
+            ConnectionString: connectionString,
+            AccountName: window.accountname,
+            AccessKey: window.accesskey
+        };
+    }
+    else {
+        azuredetails = {};
+    }
+}
+
+
 

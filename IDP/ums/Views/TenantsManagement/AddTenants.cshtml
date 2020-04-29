@@ -40,10 +40,14 @@
         var checkTenantNameExistsUrl = "@Url.Action("CheckTenantNameExist", "TenantsManagement")";
         var addTenantsUrl = "@Url.Action("AddTenant", "ServerConfiguration")";
         var getTenantDetailsUrl = "@Url.Action("GetTenantInfo", "TenantsManagement")";
+        var blobDetails = "@Url.Action("GetAzureDetails", "TenantsManagement")";
         var updateTenantDetailsUrl = "@Url.Action("UpdateTenantInfo", "TenantsManagement")";
         var checkDatabaseExistForServerUrl = "@Url.Action("CheckDatabaseExistsForServer", "ServerConfiguration")";
         var dataConnectorsCount = "@CloudAppConfig.DataConnectorsCount";
         var umsSitesUrl = "@Url.Action("Sites", "TenantsManagement")";
+        var isBoldBI = "@(GlobalAppSettings.BrandingDisplayName == AppBranding.BoldBI.DisplayName)".toLowerCase() == "true";
+        var isAzureApplication = ("@ViewBag.IsAzureApplication".toLowerCase() === "true");
+        var selfHosted = ("@ViewBag.selfHosted".toLowerCase() === "true");
     </script>
 </head>
 <body>
@@ -70,10 +74,20 @@
                                 <div class="circle"></div>
                                 <div class="hr-tag"> </div>
                             </div>
-                            <div class="selector-panel" id="selection-intermediate-db">
-                                <div class="circle"></div>
-                                <div class="hr-tag"> </div>
-                            </div>
+                            @if (ViewBag.IsBoldBIMultiTenant)
+                            {
+                                <div class="selector-panel" id="selection-intermediate-db">
+                                    <div class="circle"></div>
+                                    <div class="hr-tag"> </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="selector-panel" id="selection-storage">
+                                    <div class="circle"></div>
+                                    <div class="hr-tag"> </div>
+                                </div>
+                            }
                             <div class="selector-panel" id="selectionadmin">
                                 <div class="circle"></div>
                             </div>
@@ -81,7 +95,14 @@
                         <div class="selector-content">
                             <span class="site-creation selectedContent">[[[SITE CREATION]]]</span>
                             <span class="select-database">[[[SELECT DATABASE]]]</span>
-                            <span class="select-intermediate-database">[[[SELECT DATA STORE]]]</span>
+                            @if (ViewBag.IsBoldBIMultiTenant)
+                            {
+                                <span class="select-intermediate-database">[[[SELECT DATA STORE]]]</span>
+                            }
+                            else
+                            {
+                                <span class="select-storage">[[[SELECT STORAGE]]]</span>
+                            }
                             <span class="administrator">[[[ADMINISTRATOR]]]</span>
                         </div>
                     </div>
@@ -174,7 +195,10 @@
                                         <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 txt-holder center-align input-alignment no-padding">
                                             <input type="text" id="tenant-identifier" name="tenantidentifier" class=" form-text form-control system-settings-startup-page-fields db-fields text-content" placeholder="[[[Site identifier]]]" />
                                             <span class="startup-validation validation-txt-errors" id="tenant-identifier-validation-error"></span>
-                                            <span class="identifier-info">[[[The site identifier should be unique, and it is part of your site URL.]]]<div class="site-default-text text-content">[[[i.e. ]]]@baseUrl</div></span>
+                                            <span class="identifier-info">
+                                                [[[The site identifier should be unique, and it is part of your site URL.]]]
+                                                <div class="site-default-text text-content">[[[i.e. ]]]@baseUrl</div>
+                                            </span>
                                         </div>
                                     </div>
                                 </form>
@@ -187,6 +211,9 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="storage-form hide">
+                                @Html.Action("StorageConfiguraton", "serverconfiguration")
                             </div>
                             <div class="tenant-user-form hide">
                                 @Html.Partial("_TenantUserSelection")
