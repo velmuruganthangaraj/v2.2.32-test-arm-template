@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SystemSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <OrganizationName>Bold Reports On-Premise</OrganizationName>
+  <InstallationFolder>BoldReports</InstallationFolder>
+  <WelcomeNoteText>Welcome to Bold Reports On-Premise</WelcomeNoteText>
+  <CopyrightInformation>Copyright &amp;copy; 2001 - $$CurrentYear$$ Syncfusion Inc.   |   All Rights Reserved</CopyrightInformation>
+  <IsShowPoweredBySyncfusion>true</IsShowPoweredBySyncfusion>
+  <DRM>CP72/3sdddthH1nCWclTVdMgl9m/f3uhbK6W0tzHVn0O2K3ZVkaCM8II/FK0F7+4qxRJNy0myAVF3KgdECjfBWyLQiudD8q+XaxYLRYo4W8+g7gu/N+EKGZkX/7QNOjVPbwuWWnNvercwmLFdjJEg6SOii11AYySc0994RR/TWIkoE2GChk7mTQBmv97nYVuJrM/4XVKMMpQCqJUNtKjd7NNSQ7A23E1HFimppjA8zdP/Kp9L8F2gUrDpBblmNOlyOQA0OpjGKSelMCvFKJAydIS9TuMSVt4uCD4mCMXDGANncr/+7VBMEkVGC9O8XSDsiTl9cMz34F3eMU1hMm1s7bVTVGBMZ1En4HG+0ZUgCpk4jZlBBXFOLU/Wj0Dei4GPNz1Quhu2eI2lNrbll+65eEop/28RYEuflHQYVOWxM4qA2JRRwVLBaQxUld56zH4vykuUGa4pyAVFkpEpdHzBOc7f370Va90VZycOWFInaotceMZtA4QbTKyB2jBcWvlz2qjr0cKzCQWHKgN3XYfDCJOYkGBdT9hkYefNsZlMkXbb/gpIig4kqAig0DagJnO+IjZNE4YIYQZTXhSkIgAxIslQTAVo+ozgYqt49s6HkCujXkO4Ww4RglNcjLq1R2rBvIL4viAQ8K8xGM6Dql6k5RZIAd97eyCDoABXwDMdj+7fQPRLq/qSeE81YSoFoXOjd/LQlRhpw2Z6xNp2emSXzFAF+UJ/vqdl2iD17PTtDl1SRDvrt9pMd5gunjW8gYd</DRM>
+  <InternalAppDataServiceUrl>https://boldrswebapptest.azurewebsites.net/reporting/reportservice</InternalAppDataServiceUrl>
+  <InternalAppIdpUrl>https://boldrswebapptest.azurewebsites.net/</InternalAppIdpUrl>
+  <InternalAppClientId>6722e999-dd11-4e82-8f61-93133fdb66f2</InternalAppClientId>
+  <InternalAppClientSecret>4/FNoFf6FxkPE0UGW73l4UeY1M0d+AVefiDtQXQdt04N53HDPXppe7elQ3XTwhHp86tXRDRPYXYEBHJ/HzLiIQ==</InternalAppClientSecret>
+  <IdaTenant>
+  </IdaTenant>
+  <IdaAudience>
+  </IdaAudience>
+</SystemSettings>
